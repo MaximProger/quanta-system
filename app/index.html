@@ -2,20 +2,59 @@
 <!--#include virtual="/parts/header.html" -->
 
 <main class="main">
-  <div class="fixed__banner__item">
-    <div class="fixed__banner__wrapper">
 
-      <button type="button" class="fixed__banner__btn">
-        &times;
-      </button>
+  <section class="intro" id="intro">
+    <div class="container">
+      <div class="intro__inner">
+        <h2 class="intro__suptitle">
+          #неткислымщам
+        </h2>
+        <h1 class="intro__title">
+          <span>
+            Экскурсии<br>
+            с Улыбкой
+          </span>
 
-      <a href="#" class="fixed__banner__link">
-        <div class="fixed__banner">
+          <picture decoding="async">
+            <source type="image/webp" srcset="images/dist/with__us.webp">
+            <img class="intro__title__img" width="284" height="180" src="images/dist/with__us.png" alt="with__us"
+              loading="lazy">
+          </picture>
+        </h1>
+        <p class="intro__description">
+          Сеть магазинов «Улыбка радуги» празднует 20-летие!
+          В честь этого события мы дарим возможность поучаствовать в бесплатной автобусной экскурсии по Санкт-Петербургу
+          – городу, в котором появился наш первый магазин.
+        </p>
+        <button type="button" class="intro__link">
+          <span class="intro__link__icon"></span>
 
+          <span class="intro__link__text">
+            Подробнее о маршрутах
+          </span>
+        </button>
+
+        <div class="intro__wrapper">
+          <button class="btn intro__btn" type="button">
+            Забронировать
+          </button>
+
+          <span class="intro__text">
+            Для участия в бесплатной
+            автобусной экскурсии необходима предварительная запись.
+          </span>
         </div>
-      </a>
+
+        <picture decoding="async">
+          <source type="image/webp" srcset="images/dist/intro__bg.webp">
+          <img class="intro__bus" width="883" height="517" src="images/dist/intro__bg.png" alt="bus" loading="lazy">
+        </picture>
+
+        <div class="intro__ellipse"></div>
+      </div>
     </div>
-  </div>
+  </section>
+
 </main>
 
 <!--#include virtual="/parts/footer.html" -->

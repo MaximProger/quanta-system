@@ -1,24 +1,48 @@
 @font-face {
-  font-family: "Roboto";
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Montserrat"), url("../fonts/Montserrat-Light.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: local("Roboto"), url("../fonts/roboto-regular-webfont.woff2") format("woff2");
+  src: local("Montserrat"), url("../fonts/Montserrat-Regular.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Roboto";
-  font-style: italic;
-  font-weight: 400;
-  src: local("Roboto"), url("../fonts/roboto-italic-webfont.woff2") format("woff2");
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Montserrat"), url("../fonts/Montserrat-Medium.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Roboto";
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat"), url("../fonts/Montserrat-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: local("Roboto"), url("../fonts/roboto-bold-webfont.woff2") format("woff2");
+  src: local("Montserrat"), url("../fonts/Montserrat-ExtraBold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat Alternates";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat Alternates"), url("../fonts/MontserratAlternates-Bold.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -180,14 +204,14 @@ img {
 }
 
 body {
-  font-family: Roboto, sans-serif;
-  font-size: 16px;
-  line-height: 1.65;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
   position: relative;
   min-width: 320px;
   overflow-x: hidden;
-  color: #000;
-  background: #fff;
+  color: #1e1e1e;
+  background: #eff2f8;
 }
 
 .container {
@@ -203,6 +227,290 @@ body {
 
 .no-xl {
   display: none;
+}
+
+.logo {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.phone__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.phone__link {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  margin-left: 26px;
+  text-decoration: none;
+  color: #1e1e1e;
+}
+
+.phone__text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.btn {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 272px;
+  height: 70px;
+  text-decoration: none;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(#23bbd3), to(#239fb3));
+  background: -o-linear-gradient(top, #23bbd3 0%, #239fb3 100%);
+  background: linear-gradient(180deg, #23bbd3 0%, #239fb3 100%);
+  border-radius: 10px;
+  color: #ffffff;
+  border: none;
+}
+
+.btn::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  content: "";
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  opacity: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#23a5ba), to(#137484));
+  background: -o-linear-gradient(top, #23a5ba 0%, #137484 100%);
+  background: linear-gradient(180deg, #23a5ba 0%, #137484 100%);
+  border-radius: 10px;
+}
+
+.btn:hover::before {
+  opacity: 1;
+}
+
+.btn:disabled {
+  cursor: auto;
+  pointer-events: none;
+}
+
+.btn:disabled::before {
+  opacity: 1;
+  background: #93a2bb;
+}
+
+.btn--small {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  width: 170px;
+  height: 43px;
+  color: #1e1e1e;
+}
+
+.btn--small::before {
+  width: calc(100% - 3px);
+  height: calc(100% - 2.5px);
+  opacity: 1;
+  background: #fff;
+}
+
+.btn--small:hover {
+  color: #fff;
+}
+
+.btn--small:hover::before {
+  opacity: 0;
+}
+
+.btn--small:disabled {
+  color: #93a2bb;
+  background: #93a2bb;
+}
+
+.btn--small:disabled::before {
+  background: #fff;
+}
+
+.btn__text {
+  position: relative;
+  z-index: 3;
+}
+
+.header {
+  position: relative;
+  padding: 25px 0;
+  background-color: #fff;
+}
+
+.header::before {
+  position: absolute;
+  bottom: -77px;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 77px;
+  content: "";
+  background: -webkit-gradient(linear, left top, left bottom, from(#e7edf7), to(rgba(240, 242, 244, 0)));
+  background: -o-linear-gradient(top, #e7edf7 0%, rgba(240, 242, 244, 0) 100%);
+  background: linear-gradient(180deg, #e7edf7 0%, rgba(240, 242, 244, 0) 100%);
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.intro {
+  padding-top: 95px;
+  padding-bottom: 126px;
+  background: url("/app/images/dist/grain.png") repeat;
+}
+
+.intro__inner {
+  position: relative;
+}
+
+.intro__suptitle {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.intro__title {
+  font-family: Montserrat Alternates;
+  font-weight: bold;
+  font-size: 120px;
+  line-height: 115px;
+  position: relative;
+  margin-bottom: 36px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.intro__title span {
+  background: -o-linear-gradient(172.72deg, #812990 22.88%, #ed1846 60.52%, #fbb306 98.17%);
+  background: linear-gradient(277.28deg, #812990 22.88%, #ed1846 60.52%, #fbb306 98.17%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro__title__img {
+  position: absolute;
+  top: -25px;
+  right: -284px;
+  z-index: 2;
+}
+
+.intro__description {
+  font-size: 14px;
+  line-height: 18px;
+  max-width: 389px;
+  width: 100%;
+  margin-bottom: 23px;
+}
+
+.intro__link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 56px;
+  text-decoration: none;
+  color: #1e1e1e;
+}
+
+.intro__link__icon {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin-right: 9px;
+  background: url("../../images/dist/icons/place_icon.svg") no-repeat center;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 60px;
+}
+
+.nav__btn {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  display: inline-block;
+  padding: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  color: #1e1e1e;
+  background: none;
+  border: none;
+}
+
+.nav__btn:hover {
+  color: #768197;
+}
+
+.nav__btn:disabled {
+  cursor: auto;
+  color: #93a2bb;
 }
 
 @media (max-width: 1199px) {
@@ -225,7 +533,8 @@ body {
   }
 }
 @supports (-webkit-appearance:none){
-
+.intro{background:url("/app/images/dist/grain.webp") repeat}
+.intro__link__icon{background:url("../../images/dist/icons/place_icon.svg") no-repeat center}
 }
 
  @media (max-width: 1199px){

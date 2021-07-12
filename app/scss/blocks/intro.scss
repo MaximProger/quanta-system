@@ -1,0 +1,86 @@
+.intro {
+  padding-top: 95px;
+  padding-bottom: 126px;
+
+  background: url("/app/images/dist/grain.png") repeat;
+}
+
+.intro__inner {
+  position: relative;
+}
+
+.intro__suptitle {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+
+  margin-bottom: 4px;
+
+  text-transform: uppercase;
+}
+
+.intro__title {
+  font-family: Montserrat Alternates;
+  font-weight: bold;
+  font-size: 120px;
+  line-height: 115px;
+
+  position: relative;
+
+  margin-bottom: 36px;
+  width: fit-content;
+
+  span {
+    background: $gradient_r;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.intro__title__img {
+  position: absolute;
+  top: -25px;
+  right: -284px;
+  z-index: 2;
+}
+
+.intro__description {
+  font-size: 14px;
+  line-height: 18px;
+
+  max-width: 389px;
+  width: 100%;
+  margin-bottom: 23px;
+}
+
+.intro__link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  margin-bottom: 56px;
+
+  text-decoration: none;
+
+  color: $textcolor;
+}
+
+.intro__link__icon {
+  display: inline-block;
+
+  width: 28px;
+  height: 28px;
+  margin-right: 9px;
+
+  background: url("../../images/dist/icons/place_icon.svg") no-repeat center;
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $mobile) {
+}

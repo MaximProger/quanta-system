@@ -1,0 +1,37 @@
+.header {
+  position: relative;
+
+  padding: 25px 0;
+
+  background-color: #fff;
+
+  &::before {
+    position: absolute;
+    bottom: -77px;
+    left: 0;
+    z-index: 2;
+
+    width: 100%;
+    height: 77px;
+
+    content: "";
+
+    background: linear-gradient(
+      180deg,
+      #e7edf7 0%,
+      rgba(240, 242, 244, 0) 100%
+    );
+  }
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $mobile) {
+}

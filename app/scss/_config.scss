@@ -1,9 +1,24 @@
 // USER VARIABLES SECTION
-$fontsize: 16px; // Body Font Size
-$textcolor: #000; // Text Color
-$lineheight: 1.65; // Document Line Height
-$userfont: Roboto, sans-serif; // User Font Family
+$fontsize: 12px; // Body Font Size
+$textcolor: #1e1e1e; // Text Color
+$lineheight: 16px; // Document Line Height
+$userfont: Montserrat, sans-serif; // User Font Family
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+
+// Colors
+$gradient_r: linear-gradient(
+  277.28deg,
+  #812990 22.88%,
+  #ed1846 60.52%,
+  #fbb306 98.17%
+);
+$gradient_blue: linear-gradient(180deg, #23bbd3 0%, #239fb3 100%);
+$gradient_blue--hover: linear-gradient(180deg, #23a5ba 0%, #137484 100%);
+
+$blue: #239fb3;
+$disabled: #93a2bb;
+$red: #ed1846;
+$gray_bg: #eff2f8;
 
 // Breakpoints
 $tablet: 1199px;
@@ -21,6 +36,15 @@ $mobile-sm: 374px;
   }
 }
 
-@include font("Roboto", normal, 400, "../fonts/roboto-regular-webfont.woff2");
-@include font("Roboto", italic, 400, "../fonts/roboto-italic-webfont.woff2");
-@include font("Roboto", normal, 700, "../fonts/roboto-bold-webfont.woff2");
+@include font("Montserrat", normal, 300, "../fonts/Montserrat-Light.woff2");
+@include font("Montserrat", normal, 400, "../fonts/Montserrat-Regular.woff2");
+@include font("Montserrat", normal, 500, "../fonts/Montserrat-Medium.woff2");
+@include font("Montserrat", normal, 600, "../fonts/Montserrat-Bold.woff2");
+@include font("Montserrat", normal, 700, "../fonts/Montserrat-ExtraBold.woff2");
+
+@include font(
+  "Montserrat Alternates",
+  normal,
+  600,
+  "../fonts/MontserratAlternates-Bold.woff2"
+);
