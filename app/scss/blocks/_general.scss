@@ -1,0 +1,49 @@
+// GENERAL PROJECT STYLES
+body {
+  font-family: $userfont;
+  font-size: $fontsize;
+  line-height: $lineheight;
+
+  position: relative;
+
+  min-width: 320px;
+  overflow-x: hidden;
+
+  color: $textcolor;
+  background: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.noscroll {
+  overflow-x: hidden;
+}
+
+.no-xl {
+  display: none;
+}
+
+@media (max-width: $tablet) {
+  .no-md {
+    display: none;
+  }
+
+  .md {
+    display: inline-block;
+  }
+}
+
+@media (max-width: $mobile) {
+  .no-xs {
+    display: none;
+  }
+
+  .xs {
+    display: inline-block;
+  }
+}
