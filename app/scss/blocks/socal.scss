@@ -1,0 +1,30 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 14px;
+}
+
+.social__item {
+  display: inline-block;
+
+  text-decoration: none;
+  transition: all 0.5s linear;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.social__icon {
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  min-height: 34px;
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $mobile) {
+}

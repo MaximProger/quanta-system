@@ -2,11 +2,21 @@
   padding-top: 95px;
   padding-bottom: 126px;
 
-  background: url("/app/images/dist/grain.png") repeat;
+  background: url("../../images/dist/grain.png") repeat;
+
+  .container {
+    position: relative;
+  }
 }
 
 .intro__inner {
   position: relative;
+  z-index: 3;
+}
+
+.intro__content {
+  position: relative;
+  z-index: 3;
 }
 
 .intro__suptitle {
@@ -63,10 +73,36 @@
   justify-content: flex-start;
 
   margin-bottom: 56px;
+  padding: 0;
 
   text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s linear;
 
   color: $textcolor;
+  border: none;
+  background: none;
+
+  &:hover {
+    color: $blue;
+
+    .intro__link__icon {
+      background: url("../../images/dist/icons/place_icon--hover.svg") no-repeat
+        center;
+    }
+  }
+
+  &:disabled {
+    pointer-events: none;
+    cursor: auto;
+
+    color: #93a2bb;
+
+    .intro__link__icon {
+      background: url("../../images/dist/icons/place_icon--disabled.svg")
+        no-repeat center;
+    }
+  }
 }
 
 .intro__link__icon {
@@ -76,7 +112,46 @@
   height: 28px;
   margin-right: 9px;
 
+  transition: all 0.2s linear;
+
   background: url("../../images/dist/icons/place_icon.svg") no-repeat center;
+}
+
+.intro__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.intro__btn {
+  margin-right: 51px;
+}
+
+.intro__text {
+  font-size: 12px;
+  line-height: 16px;
+
+  max-width: 225px;
+  width: 100%;
+}
+
+.intro__bus {
+  position: absolute;
+  right: -95px;
+  bottom: -79px;
+  z-index: 2;
+}
+
+.intro__ellipse {
+  position: absolute;
+  top: -310px;
+  right: 0;
+
+  width: 764px;
+  height: 764px;
+
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
 }
 
 @media (max-width: $tablet) {

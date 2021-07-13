@@ -16,6 +16,8 @@
 		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="css/include/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
@@ -25,22 +27,1994 @@
 	<header class="header" id="header">
 		<div class="container">
 			<div class="header__inner">
+				<a href="#" class="logo">
+					<img class="logo__img" width="173" height="29" src="images/dist/icons/R-Smile-Logo-1.svg" alt="R-Smile"
+						loading="lazy">
+				</a>
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<button type="button" class="nav__btn" data-scroll="#routes">
+								О маршрутах
+							</button>
+						</li>
 
+						<li class="nav__item">
+							<button type="button" class="nav__btn" data-scroll="#schedule">
+								Расписание
+							</button>
+						</li>
+
+						<li class="nav__item">
+							<button type="button" class="nav__btn" data-scroll="#connection">
+								Анкета
+							</button>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="phone__item">
+					<span class="phone__text">
+						Контактный центр:
+					</span>
+
+					<a href="tel:8 800 505 66 00" class="phone__link">
+						8 800 505 66 00
+					</a>
+				</div>
 			</div>
 		</div>
 	</header>
 
 <main class="main">
 
+  <section class="intro" id="intro">
+    <div class="container">
+      <div class="intro__inner">
+        <div class="intro__content">
+          <h2 class="intro__suptitle">
+            #неткислымщам
+          </h2>
+          <h1 class="intro__title">
+            <span>
+              Экскурсии<br>
+              с Улыбкой
+            </span>
+
+            <picture decoding="async">
+              <source type="image/webp" srcset="images/dist/with__us.webp">
+              <img class="intro__title__img" width="284" height="180" src="images/dist/with__us.png" alt="with__us"
+                loading="lazy">
+            </picture>
+          </h1>
+          <p class="intro__description">
+            Сеть магазинов «Улыбка радуги» празднует 20-летие!
+            В честь этого события мы дарим возможность поучаствовать в бесплатной автобусной экскурсии по
+            Санкт-Петербургу
+            – городу, в котором появился наш первый магазин.
+          </p>
+          <button type="button" class="intro__link" data-scroll="#routes">
+            <span class="intro__link__icon"></span>
+
+            <span class="intro__link__text">
+              Подробнее о маршрутах
+            </span>
+          </button>
+
+          <div class="intro__wrapper">
+            <button class="btn intro__btn" type="button" data-scroll="#connection">
+              <span class="btn__text">
+                Забронировать
+              </span>
+            </button>
+
+            <span class="intro__text">
+              Для участия в бесплатной
+              автобусной экскурсии необходима предварительная запись.
+            </span>
+          </div>
+        </div>
+
+        <picture decoding="async">
+          <source type="image/webp" srcset="images/dist/intro__bg.webp">
+          <img class="intro__bus" width="883" height="517" src="images/dist/intro__bg.png" alt="bus" loading="lazy">
+        </picture>
+      </div>
+
+      <div class="intro__ellipse"></div>
+    </div>
+  </section>
+
+
+  <div class="main__content">
+    <div class="main__content__wrapper">
+      <section class="routes" id="routes">
+        <div class="container">
+          <div class="routes__inner">
+            <h2 class="routes__title">
+              О маршрутах
+            </h2>
+
+            <div class="routes__list">
+
+              <div class="routes__item">
+                <div class="routes__wrapper">
+                  <picture decoding="async">
+                    <source type="image/webp" srcset="images/dist/routes/1.webp">
+                    <img class="routes__img" width="560" height="480" src="images/dist/routes/1.png" alt="route__img"
+                      loading="lazy">
+                  </picture>
+
+                  <div class="routes__content">
+                    <div class="routes__content__wrapper">
+                      <h3 class="routes__item__title">
+                        XVIII век. «Русская Европа<br>
+                        или Город вопреки»
+                      </h3>
+
+                      <div class="routes__text__list">
+                        <p class="routes__text">
+                          Как создавался Петровский Парадиз, с чего он начинался? Узнаем обо всем “первом”, что
+                          появилось
+                          в
+                          молодом городе. Первые жители, кто они были? Первая улица, где проходила? Первая площадь,
+                          первый
+                          жилой дом , первый сад, первый гостиный двор, первая печатня, первый музей…
+                        </p>
+                        <p class="routes__text">
+                          Как рождались «русские европейцы»? Как появился «город вопреки»?
+                          Почувствуем себя первыми петербуржцами на заболоченных берегах Невы.
+                        </p>
+                        <p class="routes__text">
+                          <span class="routes__text__title">
+                            Выйдем из автобуса на Троицкой площади.
+                          </span>
+                          Прогуляемся по скверу и представим себе город эпохи Петра.
+                          Мы в том месте, где открылся первый храм и трактир, проходили первые парады и казни, жили
+                          первые
+                          европейцы и крепостные строители. На этом месте Пётр I был провозглашён императором, а Россия
+                          -
+                          империей.
+                        </p>
+                      </div>
+
+                      <div class="routes__bottom">
+                        <div class="routes__info">
+
+                          <div class="routes__places">
+                            <div class="routes__places__item">
+                              <img class="routes__places__icon" width="10" height="13"
+                                src="images/dist/icons/place_icon--small.svg" alt="place_icon" loading="lazy">
+
+                              <span class="routes__places__text">
+                                Начало: Пл. Островского
+                              </span>
+                            </div>
+                            <img class="routes__places__dost" width="2" height="6" src="images/dist/icons/dots.svg"
+                              alt="dots" loading="lazy">
+                            <div class="routes__places__item">
+                              <img class="routes__places__icon" width="10" height="13"
+                                src="images/dist/icons/place_icon--small.svg" alt="place_icon" loading="lazy">
+
+                              <span class="routes__places__text">
+                                Конец: Литейный проспект
+                              </span>
+                            </div>
+                          </div>
+
+                          <button class="routes__map participate" type="button">
+                            Карта маршрута
+                          </button>
+
+
+                        </div>
+
+                        <button class="btn routes__btn" type="button">
+                          <span class="btn__text">
+                            Участвовать
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="routes__wrapper routes__wrapper--map">
+                  <picture decoding="async">
+                    <source type="image/webp" srcset="images/dist/routes/map.webp">
+                    <img class="routes__img" width="560" height="480" src="images/dist/routes/map.png" alt="route__img"
+                      loading="lazy">
+                  </picture>
+
+                  <div class="routes__content">
+                    <div class="routes__content__wrapper">
+                      <h3 class="routes__item__title">
+                        Карта маршрута
+                      </h3>
+
+                      <div class="routes__text__list">
+                        <p class="routes__text">
+                          <span class="routes__text__title">
+                            Посадка в автобус у Александринского театра на площади Островского.
+                          </span>
+                        </p>
+                        <p class="routes__text">
+                          Пл. Островского – ул. Зодчего Росси – Аничков дворец – наб. реки Фонтанки – Михайловский замок
+                          -
+                          Невский пр. – 1-я Публичная библиотека – костёл Св. Екатерины – кафе «Вольф и Беранже» - дом
+                          Пиковой дамы на М. Морской –Исаакиевская пл. (остановка для выхода) – Адмиралтейский проспект.
+                          –
+                          Дворцовая пл. – Дворцовая наб. – наб. Кутузова – Гагаринская ул. – ул. Чайковского -Литейный
+                          проспект
+                        </p>
+                        <p class="routes__text">
+                          <span class="routes__text__title">
+                            Высадка у Фонтанного дома и магазина «Улыбка Радуги»
+                            на Литейном проспекте 51
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <button class="routes__close" type="button">
+                      <span></span>
+                    </button>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="routes__item">
+                <div class="routes__wrapper">
+                  <picture decoding="async">
+                    <source type="image/webp" srcset="images/dist/routes/2.webp">
+                    <img class="routes__img" width="560" height="480" src="images/dist/routes/2.png" alt="route__img"
+                      loading="lazy">
+                  </picture>
+
+                  <div class="routes__content">
+                    <div class="routes__content__wrapper">
+                      <h3 class="routes__item__title">
+                        XIX век. «Петербург – это<br>
+                        модно»
+                      </h3>
+
+                      <div class="routes__text__list">
+                        <p class="routes__text">
+                          Мы проедем по щегольскому Петербургу XIX века. Это самый модный маршрут эпохи. Ведь здесь
+                          ежедневно гуляет сам император Александр I.
+                        </p>
+                        <p class="routes__text">
+                          Узнаем все тренды. Что было модно носить и где было круто кутить. С какой целью ходили в
+                          театры
+                          и
+                          как флиртовали на балах. О чем следует говорить, чтобы блеснуть в светском обществе и какие
+                          темы
+                          сделают вас изгоем. Сколько стоит соответствовать моде и что ждет тех, кто не может себе это
+                          позволить.
+                        </p>
+                        <p class="routes__text">
+                          <span class="routes__text__title">
+                            Выйдем из автобуса на Исаакиевской площади.
+                          </span>
+                          Погуляем по площади и поговорим о Николае I жестком
+                          правителе, но любящем отце. Взлет и падение архитектора Монферрана. Как завязать полезные
+                          знакомство прогуливаясь по Адмиралтейскому бульвару.
+                        </p>
+                      </div>
+
+                      <div class="routes__bottom">
+                        <div class="routes__info">
+
+                          <div class="routes__places">
+                            <div class="routes__places__item">
+                              <img class="routes__places__icon" width="10" height="13"
+                                src="images/dist/icons/place_icon--small.svg" alt="place_icon" loading="lazy">
+
+                              <span class="routes__places__text">
+                                Начало: Пл. Островского
+                              </span>
+                            </div>
+                            <img class="routes__places__dost" width="2" height="6" src="images/dist/icons/dots.svg"
+                              alt="dots" loading="lazy">
+                            <div class="routes__places__item">
+                              <img class="routes__places__icon" width="10" height="13"
+                                src="images/dist/icons/place_icon--small.svg" alt="place_icon" loading="lazy">
+
+                              <span class="routes__places__text">
+                                Конец: Литейный проспект
+                              </span>
+                            </div>
+                          </div>
+
+                          <button class="routes__map participate" type="button">
+                            Карта маршрута
+                          </button>
+
+
+                        </div>
+
+                        <button class="btn routes__btn" type="button">
+                          <span class="btn__text">
+                            Участвовать
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="routes__wrapper routes__wrapper--map">
+                  <picture decoding="async">
+                    <source type="image/webp" srcset="images/dist/routes/map.webp">
+                    <img class="routes__img" width="560" height="480" src="images/dist/routes/map.png" alt="route__img"
+                      loading="lazy">
+                  </picture>
+
+                  <div class="routes__content">
+                    <div class="routes__content__wrapper">
+                      <h3 class="routes__item__title">
+                        Карта маршрута
+                      </h3>
+
+                      <div class="routes__text__list">
+                        <p class="routes__text">
+                          <span class="routes__text__title">
+                            Посадка в автобус у Александринского театра на площади Островского.
+                          </span>
+                        </p>
+                        <p class="routes__text">
+                          Пл. Островского – ул. Зодчего Росси – Аничков дворец – наб. реки Фонтанки – Михайловский замок
+                          -
+                          Невский пр. – 1-я Публичная библиотека – костёл Св. Екатерины – кафе «Вольф и Беранже» - дом
+                          Пиковой дамы на М. Морской –Исаакиевская пл. (остановка для выхода) – Адмиралтейский проспект.
+                          –
+                          Дворцовая пл. – Дворцовая наб. – наб. Кутузова – Гагаринская ул. – ул. Чайковского -Литейный
+                          проспект
+                        </p>
+                        <p class="routes__text">
+                          <span class="routes__text__title">
+                            Высадка у Фонтанного дома и магазина «Улыбка Радуги»
+                            на Литейном проспекте 51
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <button class="routes__close" type="button">
+                      <span></span>
+                    </button>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="routes__item">
+                <div class="routes__wrapper">
+                  <picture decoding="async">
+                    <source type="image/webp" srcset="images/dist/routes/1.webp">
+                    <img class="routes__img" width="560" height="480" src="images/dist/routes/1.png" alt="route__img"
+                      loading="lazy">
+                  </picture>
+
+                  <div class="routes__content">
+                    <div class="routes__content__wrapper">
+                      <h3 class="routes__item__title">
+                        XVIII век. «Русская Европа<br>
+                        или Город вопреки»
+                      </h3>
+
+                      <div class="routes__text__list">
+                        <p class="routes__text">
+                          Как создавался Петровский Парадиз, с чего он начинался? Узнаем обо всем “первом”, что
+                          появилось
+                          в
+                          молодом городе. Первые жители, кто они были? Первая улица, где проходила? Первая площадь,
+                          первый
+                          жилой дом , первый сад, первый гостиный двор, первая печатня, первый музей…
+                        </p>
+                        <p class="routes__text">
+                          Как рождались «русские европейцы»? Как появился «город вопреки»?
+                          Почувствуем себя первыми петербуржцами на заболоченных берегах Невы.
+                        </p>
+                        <p class="routes__text">
+                          <span class="routes__text__title">
+                            Выйдем из автобуса на Троицкой площади.
+                          </span>
+                          Прогуляемся по скверу и представим себе город эпохи Петра.
+                          Мы в том месте, где открылся первый храм и трактир, проходили первые парады и казни, жили
+                          первые
+                          европейцы и крепостные строители. На этом месте Пётр I был провозглашён императором, а Россия
+                          -
+                          империей.
+                        </p>
+                      </div>
+
+                      <div class="routes__bottom">
+                        <div class="routes__info">
+
+                          <div class="routes__places">
+                            <div class="routes__places__item">
+                              <img class="routes__places__icon" width="10" height="13"
+                                src="images/dist/icons/place_icon--small.svg" alt="place_icon" loading="lazy">
+
+                              <span class="routes__places__text">
+                                Начало: Пл. Островского
+                              </span>
+                            </div>
+                            <img class="routes__places__dost" width="2" height="6" src="images/dist/icons/dots.svg"
+                              alt="dots" loading="lazy">
+                            <div class="routes__places__item">
+                              <img class="routes__places__icon" width="10" height="13"
+                                src="images/dist/icons/place_icon--small.svg" alt="place_icon" loading="lazy">
+
+                              <span class="routes__places__text">
+                                Конец: Литейный проспект
+                              </span>
+                            </div>
+                          </div>
+
+                          <button class="routes__map participate" type="button">
+                            Карта маршрута
+                          </button>
+
+
+                        </div>
+
+                        <button class="btn routes__btn" type="button">
+                          <span class="btn__text">
+                            Участвовать
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="routes__wrapper routes__wrapper--map">
+                  <picture decoding="async">
+                    <source type="image/webp" srcset="images/dist/routes/map.webp">
+                    <img class="routes__img" width="560" height="480" src="images/dist/routes/map.png" alt="route__img"
+                      loading="lazy">
+                  </picture>
+
+                  <div class="routes__content">
+                    <div class="routes__content__wrapper">
+                      <h3 class="routes__item__title">
+                        Карта маршрута
+                      </h3>
+
+                      <div class="routes__text__list">
+                        <p class="routes__text">
+                          <span class="routes__text__title">
+                            Посадка в автобус у Александринского театра на площади Островского.
+                          </span>
+                        </p>
+                        <p class="routes__text">
+                          Пл. Островского – ул. Зодчего Росси – Аничков дворец – наб. реки Фонтанки – Михайловский замок
+                          -
+                          Невский пр. – 1-я Публичная библиотека – костёл Св. Екатерины – кафе «Вольф и Беранже» - дом
+                          Пиковой дамы на М. Морской –Исаакиевская пл. (остановка для выхода) – Адмиралтейский проспект.
+                          –
+                          Дворцовая пл. – Дворцовая наб. – наб. Кутузова – Гагаринская ул. – ул. Чайковского -Литейный
+                          проспект
+                        </p>
+                        <p class="routes__text">
+                          <span class="routes__text__title">
+                            Высадка у Фонтанного дома и магазина «Улыбка Радуги»
+                            на Литейном проспекте 51
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <button class="routes__close" type="button">
+                      <span></span>
+                    </button>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="routes__description">
+              <p class="routes__description__text">
+                Для участия в экскурсии нужно быть участников программы лояльности сети магазинов «Улыбка Радуги» (иметь
+                карту «Улыбка радуги» либо зарегистрировать виртуальную через мобильное приложение «Улыбка радуги») и
+                совершить покупку на не менее 1500 рублей.
+                Ознакомьтесь с Подробными <a href="#" class="routes__description__link">правилами экскурсии</a>.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <picture decoding="async">
+          <source type="image/webp" srcset="images/dist/bg/bg__item--1.webp">
+          <img class="routes__bg routes__bg--1" width="251" height="334" src="images/dist/bg/bg__item--1.png" alt="img"
+            loading="lazy">
+        </picture>
+
+        <picture decoding="async">
+          <source type="image/webp" srcset="images/dist/bg/bg__item--2.webp">
+          <img class="routes__bg routes__bg--2" width="437" height="374" src="images/dist/bg/bg__item--2.png" alt="img"
+            loading="lazy">
+        </picture>
+
+        <picture decoding="async">
+          <source type="image/webp" srcset="images/dist/bg/eye.webp">
+          <img class="routes__bg routes__bg--eye" width="157" height="154" src="images/dist/bg/eye.png" alt="img"
+            loading="lazy">
+        </picture>
+
+        <picture decoding="async">
+          <source type="image/webp" srcset="images/dist/bg/bg__item--3.webp">
+          <img class="routes__bg routes__bg--3" width="280" height="235" src="images/dist/bg/bg__item--3.png" alt="img"
+            loading="lazy">
+        </picture>
+
+        <picture decoding="async">
+          <source type="image/webp" srcset="images/dist/bg/bg__item--4.webp">
+          <img class="routes__bg routes__bg--4" width="714" height="705" src="images/dist/bg/bg__item--3.png" alt="img"
+            loading="lazy">
+        </picture>
+
+      </section>
+
+      <section class="schedule" id="schedule">
+        <div class="container">
+          <div class="schedule__inner">
+            <h2 class="schedule__title">
+              Расписание экскурсий
+            </h2>
+
+            <div class="schedule__btns">
+              <button class="btn schedule__btn schedule__btn--active" type="button" data-tab="#content_1">
+                <span class="btn__text">
+                  1 - 8 августа
+                </span>
+              </button>
+
+              <button class="btn schedule__btn" type="button" data-tab="#content_2">
+                <span class="btn__text">
+                  9 - 15 августа
+                </span>
+              </button>
+
+              <button class="btn schedule__btn" type="button" data-tab="#content_3">
+                <span class="btn__text">
+                  16 - 22 августа
+                </span>
+              </button>
+
+              <button class="btn schedule__btn" type="button" data-tab="#content_4">
+                <span class="btn__text">
+                  23 - 31 августа
+                </span>
+              </button>
+            </div>
+
+
+            <div class="schedule__content schedule__content--active" id="content_1">
+              <div class="schedule__ad">
+                <div class="schedule__ad__left">
+                  Продолжительность<br> экскурсии:
+                </div>
+
+                <div class="schedule__ad__right">
+                  1,5-2 часа<br>
+                  На каждом маршруте будет одна остановка с выходом из автобуса
+                </div>
+              </div>
+
+              <div class="schedule__table">
+                <div class="schedule__table__header">
+                  <div class="schedule__table__title">
+                    Будние дни:
+                  </div>
+
+                  <div class="schedule__table__info">
+                    <div class="schedule__table__line schedule__table__line--info">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        №
+                      </div>
+
+                      <div class="schedule__table__item">
+                        Название
+                      </div>
+
+                      <div class="schedule__table__item">
+                        Время
+                      </div>
+
+                      <div class="schedule__table__item">
+                        Время сбора
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <div class="schedule__table__body">
+                  <div class="schedule__table__wrapper">
+                    <div class="schedule__table__line">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        1
+                      </div>
+
+                      <div class="schedule__table__item">
+                        XVIII век. «Русская Европа<br>
+                        или Город вопреки»
+                      </div>
+
+                      <div class="schedule__table__item">
+                        14:00 - 15:30
+                      </div>
+
+                      <div class="schedule__table__item">
+                        <div class="schedule__table__inner__wrapper">
+                          13:45
+
+                          <button class="btn btn--small schedule__table__btn" type="button">
+                            <span class="btn__text">
+                              Забронировать
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="schedule__table__wrapper">
+                    <div class="schedule__table__line">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        2
+                      </div>
+
+                      <div class="schedule__table__item">
+                        XIX век. «Петербург – это модно»
+                      </div>
+
+                      <div class="schedule__table__item">
+                        16:30 - 18:00
+                      </div>
+
+                      <div class="schedule__table__item">
+                        <div class="schedule__table__inner__wrapper">
+                          16:15
+
+                          <button class="btn btn--small schedule__table__btn" type="button">
+                            <span class="btn__text">
+                              Забронировать
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="schedule__table__wrapper">
+                    <div class="schedule__table__line">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        3
+                      </div>
+
+                      <div class="schedule__table__item">
+                        XX век. «Жизнь в эпоху перемен»
+                      </div>
+
+                      <div class="schedule__table__item">
+                        19:00 - 20:30
+                      </div>
+
+                      <div class="schedule__table__item">
+                        <div class="schedule__table__inner__wrapper">
+                          18:45
+
+                          <button class="btn btn--small schedule__table__btn" type="button">
+                            <span class="btn__text">
+                              Забронировать
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+              </div>
+
+              <div class="schedule__table">
+                <div class="schedule__table__header">
+                  <div class="schedule__table__title">
+                    Будние дни:
+                  </div>
+
+                  <div class="schedule__table__info">
+                    <div class="schedule__table__line schedule__table__line--info">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        №
+                      </div>
+
+                      <div class="schedule__table__item">
+                        Название
+                      </div>
+
+                      <div class="schedule__table__item">
+                        Время
+                      </div>
+
+                      <div class="schedule__table__item">
+                        Время сбора
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <div class="schedule__table__body">
+                  <div class="schedule__table__wrapper">
+                    <div class="schedule__table__line">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        1
+                      </div>
+
+                      <div class="schedule__table__item">
+                        XVIII век. «Русская Европа<br>
+                        или Город вопреки»
+                      </div>
+
+                      <div class="schedule__table__item">
+                        14:00 - 15:30
+                      </div>
+
+                      <div class="schedule__table__item">
+                        <div class="schedule__table__inner__wrapper">
+                          13:45
+
+                          <button class="btn btn--small schedule__table__btn" type="button">
+                            <span class="btn__text">
+                              Забронировать
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="schedule__table__wrapper">
+                    <div class="schedule__table__line">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        2
+                      </div>
+
+                      <div class="schedule__table__item">
+                        XIX век. «Петербург – это модно»
+                      </div>
+
+                      <div class="schedule__table__item">
+                        16:30 - 18:00
+                      </div>
+
+                      <div class="schedule__table__item">
+                        <div class="schedule__table__inner__wrapper">
+                          16:15
+
+                          <button class="btn btn--small schedule__table__btn" type="button">
+                            <span class="btn__text">
+                              Забронировать
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="schedule__table__wrapper">
+                    <div class="schedule__table__line">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        3
+                      </div>
+
+                      <div class="schedule__table__item">
+                        XX век. «Жизнь в эпоху перемен»
+                      </div>
+
+                      <div class="schedule__table__item">
+                        19:00 - 20:30
+                      </div>
+
+                      <div class="schedule__table__item">
+                        <div class="schedule__table__inner__wrapper">
+                          18:45
+
+                          <button class="btn btn--small schedule__table__btn" type="button">
+                            <span class="btn__text">
+                              Забронировать
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="schedule__content" id="content_2">
+              <div class="schedule__ad">
+                <div class="schedule__ad__left">
+                  Продолжительность<br> экскурсии:
+                </div>
+
+                <div class="schedule__ad__right">
+                  1,5-2 часа<br>
+                  На каждом маршруте будет одна остановка с выходом из автобуса
+                </div>
+              </div>
+
+              <div class="schedule__table">
+                <div class="schedule__table__header">
+                  <div class="schedule__table__title">
+                    Будние дни:
+                  </div>
+
+                  <div class="schedule__table__info">
+                    <div class="schedule__table__line schedule__table__line--info">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        №
+                      </div>
+
+                      <div class="schedule__table__item">
+                        Название
+                      </div>
+
+                      <div class="schedule__table__item">
+                        Время
+                      </div>
+
+                      <div class="schedule__table__item">
+                        Время сбора
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <div class="schedule__table__body">
+                  <div class="schedule__table__wrapper">
+                    <div class="schedule__table__line">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        1
+                      </div>
+
+                      <div class="schedule__table__item">
+                        XIX век. «Петербург – это модно»
+                      </div>
+
+                      <div class="schedule__table__item">
+                        16:30 - 18:00
+                      </div>
+
+                      <div class="schedule__table__item">
+                        <div class="schedule__table__inner__wrapper">
+                          16:15
+
+                          <button class="btn btn--small schedule__table__btn" type="button">
+                            <span class="btn__text">
+                              Забронировать
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="schedule__table__wrapper">
+                    <div class="schedule__table__line">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        2
+                      </div>
+
+                      <div class="schedule__table__item">
+                        XX век. «Жизнь в эпоху перемен»
+                      </div>
+
+                      <div class="schedule__table__item">
+                        19:00 - 20:30
+                      </div>
+
+                      <div class="schedule__table__item">
+                        <div class="schedule__table__inner__wrapper">
+                          18:45
+
+                          <button class="btn btn--small schedule__table__btn" type="button">
+                            <span class="btn__text">
+                              Забронировать
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="schedule__table__wrapper">
+                    <div class="schedule__table__line">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        3
+                      </div>
+
+                      <div class="schedule__table__item">
+                        XVIII век. «Русская Европа<br>
+                        или Город вопреки»
+                      </div>
+
+                      <div class="schedule__table__item">
+                        14:00 - 15:30
+                      </div>
+
+                      <div class="schedule__table__item">
+                        <div class="schedule__table__inner__wrapper">
+                          13:45
+
+                          <button class="btn btn--small schedule__table__btn" type="button">
+                            <span class="btn__text">
+                              Забронировать
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="schedule__table">
+                <div class="schedule__table__header">
+                  <div class="schedule__table__title">
+                    Будние дни:
+                  </div>
+
+                  <div class="schedule__table__info">
+                    <div class="schedule__table__line schedule__table__line--info">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        №
+                      </div>
+
+                      <div class="schedule__table__item">
+                        Название
+                      </div>
+
+                      <div class="schedule__table__item">
+                        Время
+                      </div>
+
+                      <div class="schedule__table__item">
+                        Время сбора
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <div class="schedule__table__body">
+
+
+                  <div class="schedule__table__wrapper">
+                    <div class="schedule__table__line">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        1
+                      </div>
+
+                      <div class="schedule__table__item">
+                        XIX век. «Петербург – это модно»
+                      </div>
+
+                      <div class="schedule__table__item">
+                        16:30 - 18:00
+                      </div>
+
+                      <div class="schedule__table__item">
+                        <div class="schedule__table__inner__wrapper">
+                          16:15
+
+                          <button class="btn btn--small schedule__table__btn" type="button">
+                            <span class="btn__text">
+                              Забронировать
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="schedule__table__wrapper">
+                    <div class="schedule__table__line">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        2
+                      </div>
+
+                      <div class="schedule__table__item">
+                        XX век. «Жизнь в эпоху перемен»
+                      </div>
+
+                      <div class="schedule__table__item">
+                        19:00 - 20:30
+                      </div>
+
+                      <div class="schedule__table__item">
+                        <div class="schedule__table__inner__wrapper">
+                          18:45
+
+                          <button class="btn btn--small schedule__table__btn" type="button">
+                            <span class="btn__text">
+                              Забронировать
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="schedule__table__wrapper">
+                    <div class="schedule__table__line">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        3
+                      </div>
+
+                      <div class="schedule__table__item">
+                        XVIII век. «Русская Европа<br>
+                        или Город вопреки»
+                      </div>
+
+                      <div class="schedule__table__item">
+                        14:00 - 15:30
+                      </div>
+
+                      <div class="schedule__table__item">
+                        <div class="schedule__table__inner__wrapper">
+                          13:45
+
+                          <button class="btn btn--small schedule__table__btn" type="button">
+                            <span class="btn__text">
+                              Забронировать
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="schedule__content" id="content_3">
+              <div class="schedule__ad">
+                <div class="schedule__ad__left">
+                  Продолжительность<br> экскурсии:
+                </div>
+
+                <div class="schedule__ad__right">
+                  1,5-2 часа<br>
+                  На каждом маршруте будет одна остановка с выходом из автобуса
+                </div>
+              </div>
+
+              <div class="schedule__table">
+                <div class="schedule__table__header">
+                  <div class="schedule__table__title">
+                    Будние дни:
+                  </div>
+
+                  <div class="schedule__table__info">
+                    <div class="schedule__table__line schedule__table__line--info">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        №
+                      </div>
+
+                      <div class="schedule__table__item">
+                        Название
+                      </div>
+
+                      <div class="schedule__table__item">
+                        Время
+                      </div>
+
+                      <div class="schedule__table__item">
+                        Время сбора
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <div class="schedule__table__body">
+                  <div class="schedule__table__wrapper">
+                    <div class="schedule__table__line">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        1
+                      </div>
+
+                      <div class="schedule__table__item">
+                        XX век. «Жизнь в эпоху перемен»
+                      </div>
+
+                      <div class="schedule__table__item">
+                        19:00 - 20:30
+                      </div>
+
+                      <div class="schedule__table__item">
+                        <div class="schedule__table__inner__wrapper">
+                          18:45
+
+                          <button class="btn btn--small schedule__table__btn" type="button">
+                            <span class="btn__text">
+                              Забронировать
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="schedule__table__wrapper">
+                    <div class="schedule__table__line">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        2
+                      </div>
+
+                      <div class="schedule__table__item">
+                        XVIII век. «Русская Европа<br>
+                        или Город вопреки»
+                      </div>
+
+                      <div class="schedule__table__item">
+                        14:00 - 15:30
+                      </div>
+
+                      <div class="schedule__table__item">
+                        <div class="schedule__table__inner__wrapper">
+                          13:45
+
+                          <button class="btn btn--small schedule__table__btn" type="button">
+                            <span class="btn__text">
+                              Забронировать
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="schedule__table__wrapper">
+                    <div class="schedule__table__line">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        3
+                      </div>
+
+                      <div class="schedule__table__item">
+                        XIX век. «Петербург – это модно»
+                      </div>
+
+                      <div class="schedule__table__item">
+                        16:30 - 18:00
+                      </div>
+
+                      <div class="schedule__table__item">
+                        <div class="schedule__table__inner__wrapper">
+                          16:15
+
+                          <button class="btn btn--small schedule__table__btn" type="button">
+                            <span class="btn__text">
+                              Забронировать
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="schedule__table">
+                <div class="schedule__table__header">
+                  <div class="schedule__table__title">
+                    Будние дни:
+                  </div>
+
+                  <div class="schedule__table__info">
+                    <div class="schedule__table__line schedule__table__line--info">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        №
+                      </div>
+
+                      <div class="schedule__table__item">
+                        Название
+                      </div>
+
+                      <div class="schedule__table__item">
+                        Время
+                      </div>
+
+                      <div class="schedule__table__item">
+                        Время сбора
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <div class="schedule__table__body">
+                  <div class="schedule__table__wrapper">
+                    <div class="schedule__table__line">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        1
+                      </div>
+
+                      <div class="schedule__table__item">
+                        XX век. «Жизнь в эпоху перемен»
+                      </div>
+
+                      <div class="schedule__table__item">
+                        19:00 - 20:30
+                      </div>
+
+                      <div class="schedule__table__item">
+                        <div class="schedule__table__inner__wrapper">
+                          18:45
+
+                          <button class="btn btn--small schedule__table__btn" type="button">
+                            <span class="btn__text">
+                              Забронировать
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="schedule__table__wrapper">
+                    <div class="schedule__table__line">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        2
+                      </div>
+
+                      <div class="schedule__table__item">
+                        XVIII век. «Русская Европа<br>
+                        или Город вопреки»
+                      </div>
+
+                      <div class="schedule__table__item">
+                        14:00 - 15:30
+                      </div>
+
+                      <div class="schedule__table__item">
+                        <div class="schedule__table__inner__wrapper">
+                          13:45
+
+                          <button class="btn btn--small schedule__table__btn" type="button">
+                            <span class="btn__text">
+                              Забронировать
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="schedule__table__wrapper">
+                    <div class="schedule__table__line">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        3
+                      </div>
+
+                      <div class="schedule__table__item">
+                        XIX век. «Петербург – это модно»
+                      </div>
+
+                      <div class="schedule__table__item">
+                        16:30 - 18:00
+                      </div>
+
+                      <div class="schedule__table__item">
+                        <div class="schedule__table__inner__wrapper">
+                          16:15
+
+                          <button class="btn btn--small schedule__table__btn" type="button">
+                            <span class="btn__text">
+                              Забронировать
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="schedule__content" id="content_4">
+              <div class="schedule__ad">
+                <div class="schedule__ad__left">
+                  Продолжительность<br> экскурсии:
+                </div>
+
+                <div class="schedule__ad__right">
+                  1,5-2 часа<br>
+                  На каждом маршруте будет одна остановка с выходом из автобуса
+                </div>
+              </div>
+
+              <div class="schedule__table">
+                <div class="schedule__table__header">
+                  <div class="schedule__table__title">
+                    Будние дни:
+                  </div>
+
+                  <div class="schedule__table__info">
+                    <div class="schedule__table__line schedule__table__line--info">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        №
+                      </div>
+
+                      <div class="schedule__table__item">
+                        Название
+                      </div>
+
+                      <div class="schedule__table__item">
+                        Время
+                      </div>
+
+                      <div class="schedule__table__item">
+                        Время сбора
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <div class="schedule__table__body">
+                  <div class="schedule__table__wrapper">
+                    <div class="schedule__table__line">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        1
+                      </div>
+
+                      <div class="schedule__table__item">
+                        XVIII век. «Русская Европа<br>
+                        или Город вопреки»
+                      </div>
+
+                      <div class="schedule__table__item">
+                        14:00 - 15:30
+                      </div>
+
+                      <div class="schedule__table__item">
+                        <div class="schedule__table__inner__wrapper">
+                          13:45
+
+                          <button class="btn btn--small schedule__table__btn" type="button">
+                            <span class="btn__text">
+                              Забронировать
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="schedule__table__wrapper">
+                    <div class="schedule__table__line">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        2
+                      </div>
+
+                      <div class="schedule__table__item">
+                        XIX век. «Петербург – это модно»
+                      </div>
+
+                      <div class="schedule__table__item">
+                        16:30 - 18:00
+                      </div>
+
+                      <div class="schedule__table__item">
+                        <div class="schedule__table__inner__wrapper">
+                          16:15
+
+                          <button class="btn btn--small schedule__table__btn" type="button">
+                            <span class="btn__text">
+                              Забронировать
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="schedule__table__wrapper">
+                    <div class="schedule__table__line">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        3
+                      </div>
+
+                      <div class="schedule__table__item">
+                        XX век. «Жизнь в эпоху перемен»
+                      </div>
+
+                      <div class="schedule__table__item">
+                        19:00 - 20:30
+                      </div>
+
+                      <div class="schedule__table__item">
+                        <div class="schedule__table__inner__wrapper">
+                          18:45
+
+                          <button class="btn btn--small schedule__table__btn" type="button">
+                            <span class="btn__text">
+                              Забронировать
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+              </div>
+
+              <div class="schedule__table">
+                <div class="schedule__table__header">
+                  <div class="schedule__table__title">
+                    Будние дни:
+                  </div>
+
+                  <div class="schedule__table__info">
+                    <div class="schedule__table__line schedule__table__line--info">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        №
+                      </div>
+
+                      <div class="schedule__table__item">
+                        Название
+                      </div>
+
+                      <div class="schedule__table__item">
+                        Время
+                      </div>
+
+                      <div class="schedule__table__item">
+                        Время сбора
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <div class="schedule__table__body">
+                  <div class="schedule__table__wrapper">
+                    <div class="schedule__table__line">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        1
+                      </div>
+
+                      <div class="schedule__table__item">
+                        XVIII век. «Русская Европа<br>
+                        или Город вопреки»
+                      </div>
+
+                      <div class="schedule__table__item">
+                        14:00 - 15:30
+                      </div>
+
+                      <div class="schedule__table__item">
+                        <div class="schedule__table__inner__wrapper">
+                          13:45
+
+                          <button class="btn btn--small schedule__table__btn" type="button">
+                            <span class="btn__text">
+                              Забронировать
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="schedule__table__wrapper">
+                    <div class="schedule__table__line">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        2
+                      </div>
+
+                      <div class="schedule__table__item">
+                        XIX век. «Петербург – это модно»
+                      </div>
+
+                      <div class="schedule__table__item">
+                        16:30 - 18:00
+                      </div>
+
+                      <div class="schedule__table__item">
+                        <div class="schedule__table__inner__wrapper">
+                          16:15
+
+                          <button class="btn btn--small schedule__table__btn" type="button">
+                            <span class="btn__text">
+                              Забронировать
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="schedule__table__wrapper">
+                    <div class="schedule__table__line">
+                      <div class="schedule__table__item schedule__table__item--center">
+                        3
+                      </div>
+
+                      <div class="schedule__table__item">
+                        XX век. «Жизнь в эпоху перемен»
+                      </div>
+
+                      <div class="schedule__table__item">
+                        19:00 - 20:30
+                      </div>
+
+                      <div class="schedule__table__item">
+                        <div class="schedule__table__inner__wrapper">
+                          18:45
+
+                          <button class="btn btn--small schedule__table__btn" type="button">
+                            <span class="btn__text">
+                              Забронировать
+                            </span>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <picture decoding="async">
+          <source type="image/webp" srcset="images/dist/bg/bg__item--5.webp">
+          <img class="schedule__bg schedule__bg--5" width="317" height="312" src="images/dist/bg/bg__item--5.png"
+            alt="img" loading="lazy">
+        </picture>
+
+        <picture decoding="async">
+          <source type="image/webp" srcset="images/dist/bg/bg__item--6.webp">
+          <img class="schedule__bg schedule__bg--6" width="435" height="423" src="images/dist/bg/bg__item--6.png"
+            alt="img" loading="lazy">
+        </picture>
+
+        <picture decoding="async">
+          <source type="image/webp" srcset="images/dist/bg/eye.webp">
+          <img class="schedule__bg schedule__bg--eye" width="145" height="142" src="images/dist/bg/eye.png" alt="img"
+            loading="lazy">
+        </picture>
+      </section>
+
+      <section class="connection" id="connection">
+        <div class="container">
+          <div class="connection__inner">
+            <div class="connection__content">
+              <h2 class="connection__title">
+                <span>
+                  Нам<br>
+                  20 лет
+                </span>
+
+                <picture decoding="async">
+                  <source type="image/webp" srcset="images/dist/with__us--small.webp">
+                  <img class="connection__title__img" width="182" height="90" src="images/dist/with__us--small.png"
+                    alt="with__us" loading="lazy">
+                </picture>
+              </h2>
+
+              <div class="color__line connection__line">
+                <span class="color__line__item color__line__item--red"></span>
+                <span class="color__line__item color__line__item--orange"></span>
+                <span class="color__line__item color__line__item--yellow"></span>
+                <span class="color__line__item color__line__item--green"></span>
+                <span class="color__line__item color__line__item--sky"></span>
+                <span class="color__line__item color__line__item--blue"></span>
+                <span class="color__line__item color__line__item--violet"></span>
+              </div>
+
+              <div class="connection__hashtag">
+                #НЕТКИСЛЫМЩАМ
+              </div>
+
+              <p class="connection__description">
+                Мы благодарим вас за то, что всё это время вы были и остаетесь с нами. И хотим, чтобы наш День рождения
+                стал памятной датой не только для нас, но и для вас!
+              </p>
+            </div>
+
+            <div class="poll">
+              <h3 class="poll__title">
+                Анкета участника
+              </h3>
+
+              <form action="/" id="pollForm" name="pollForm" class="poll__form">
+                <div class="poll__line">
+                  <div class="poll__item">
+                    <span class="poll__item__label">
+                      Имя
+                    </span>
+
+                    <input class="poll__item__input" id="name" name="name" type="text" placeholder="Введите ваше имя"
+                      required>
+                  </div>
+                </div>
+
+                <div class="poll__line">
+                  <div class="poll__item">
+                    <span class="poll__item__label">
+                      Телефон
+                    </span>
+
+                    <input class="poll__item__input" id="phone" name="phone" type="tel"
+                      placeholder="Введите ваш номер телефона" required>
+                  </div>
+                </div>
+
+                <div class="poll__line">
+                  <div class="poll__item">
+                    <span class="poll__item__label">
+                      E-mail
+                    </span>
+
+                    <input class="poll__item__input" id="email" name="email" type="email"
+                      placeholder="Введите ваш e-mail" required>
+                  </div>
+                </div>
+
+                <div class="poll__line poll__line--code">
+                  <div class="poll__item">
+                    <span class="poll__item__label">
+                      Код
+                    </span>
+
+                    <input class="poll__item__input" id="code" name="code" type="text" placeholder="Код из билета"
+                      required>
+                  </div>
+
+                  <button class="poll__hint" type="button">
+                    <img class="poll__hint__icon" width="18" height="18" src="images/dist/icons/question.svg" alt="hint"
+                      loading="lazy">
+                  </button>
+                </div>
+
+                <div class="poll__line">
+                  <div class="poll__item">
+                    <span class="poll__item__label">
+                      Экскурсия
+                    </span>
+
+                    <div class="poll__select">
+                      <div class="poll__select__header">
+                        <span class="poll__select__value">
+                          XX век. «Жизнь в эпоху перемен»
+                        </span>
+                        <img class="poll__select__arrow" width="16" height="10" src="images/dist/icons/arrow.svg"
+                          alt="arrow" loading="lazy">
+                      </div>
+                      <div class="poll__select__list">
+                        <div class="poll__select__item">
+                          XVIII век. «Русская Европа
+                          или Город вопреки»
+                        </div>
+                        <div class="poll__select__item">
+                          XIX век. «Петербург – это модно»
+                        </div>
+                        <div class="poll__select__item">
+                          XX век. «Жизнь в эпоху перемен»
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="poll__line">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="poll__item">
+                        <span class="poll__item__label">
+                          Дата
+                        </span>
+
+                        <input class="poll__item__input poll__item__input--calendar" id="date" name="date" type="date"
+                          required>
+                      </div>
+                    </div>
+
+                    <div class="col-6">
+                      <div class="poll__item">
+                        <span class="poll__item__label">
+                          Количество мест
+                        </span>
+                        <button class="poll__number__btn poll__number__plus" type="button"
+                          onclick="this.nextElementSibling.stepUp(); this.nextElementSibling.onchange();">
+                          <span></span>
+                        </button>
+                        <input class="poll__item__input poll__item__input--number" id="quantity" name="quantity"
+                          type="number" min="1" value="2" required>
+
+                        <button class="poll__number__btn poll__number__minus" type="button"
+                          onclick="this.previousElementSibling.stepDown(); this.previousElementSibling.onchange();">
+                          <span></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="poll__line">
+                  <div class="poll__item__checkbox">
+                    <input type="checkbox" class="poll__checkbox" id="accept" name="accept" value="yes" checked
+                      required>
+                    <label class="poll__checkbox__label" for="accept">
+                      <span>
+                        Бронируя экскурсию, Вы соглашаетесь с <a class="poll__link" href="#" target="_blank">Правилами
+                          проведения
+                          мероприятия «Экскурсии с
+                          Улыбкой»</a>, а также даете разрешение
+                        на обработку персональных данных.
+                      </span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="poll__line">
+                  <button class="btn poll__submit" type="submit">
+                    <span class="btn__text">
+                      Забронировать экскурсию
+                    </span>
+                  </button>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <picture decoding="async">
+          <source type="image/webp" srcset="images/dist/bg/bg__item--1.webp">
+          <img class="connection__bg connection__bg--7" width="251" height="334" src="images/dist/bg/bg__item--1.png"
+            alt="img" loading="lazy">
+        </picture>
+
+        <picture decoding="async">
+          <source type="image/webp" srcset="images/dist/bg/bg__item--2.webp">
+          <img class="connection__bg connection__bg--8" width="437" height="374" src="images/dist/bg/bg__item--2.png"
+            alt="img" loading="lazy">
+        </picture>
+
+        <picture decoding="async">
+          <source type="image/webp" srcset="images/dist/bg/eye.webp">
+          <img class="connection__bg connection__bg--eye" width="157" height="154" src="images/dist/bg/eye.png"
+            alt="img" loading="lazy">
+        </picture>
+      </section>
+    </div>
+
+    <div class="main__grain"></div>
+  </div>
+
+
+
+
 </main>
 
 <footer class="footer" id="footer">
 	<div class="container">
 		<div class="footer__inner">
+			<div class="footer_col">
+				<div class="footer__copyright">
+					© ООО «Дрогери ритейл», 2021
+				</div>
 
+				<a href="#" class="logo">
+					<img class="logo__img" width="156" height="26" src="images/dist/icons/R-Smile-Logo-1.svg" alt="R-Smile"
+						loading="lazy">
+				</a>
+			</div>
+
+			<div class="footer_col">
+				<nav class="footer__nav">
+					<ul class="footer__nav__list">
+						<li class="footer__nav__item">
+							<a href="#" class="footer__nav__link" data-scroll="#routes">
+								О маршрутах
+							</a>
+						</li>
+						<li class="footer__nav__item">
+							<a href="#" class="footer__nav__link" data-scroll="#schedule">
+								Расписание
+							</a>
+						</li>
+						<li class="footer__nav__item">
+							<a href="#" class="footer__nav__link" data-scroll="#connection">
+								Анкета
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="footer_col">
+				<div class="footer__item">
+					<div class="footer__item__title">
+						Мы в социальных сетях:
+					</div>
+
+					<div class="social">
+						<a href="#" class="social__item" target="_blank">
+							<img class="social__icon" width="34" height="34" src="images/dist/icons/vk.svg" alt="vkontakte"
+								loading="lazy">
+						</a>
+						<a href="#" class="social__item" target="_blank">
+							<img class="social__icon" width="34" height="34" src="images/dist/icons/insta.svg" alt="instagram"
+								loading="lazy">
+						</a>
+						<a href="#" class="social__item" target="_blank">
+							<img class="social__icon" width="34" height="34" src="images/dist/icons/odnoklassniki.svg"
+								alt="odnoklassniki" loading="lazy">
+						</a>
+						<a href="#" class="social__item" target="_blank">
+							<img class="social__icon" width="34" height="34" src="images/dist/icons/fb.svg" alt="facebook"
+								loading="lazy">
+						</a>
+						<a href="#" class="social__item" target="_blank">
+							<img class="social__icon" width="34" height="34" src="images/dist/icons/youtube.svg" alt="youtube"
+								loading="lazy">
+						</a>
+						<a href="#" class="social__item" target="_blank">
+							<img class="social__icon" width="34" height="34" src="images/dist/icons/yadzen.svg" alt="yadzen"
+								loading="lazy">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer_col">
+				<div class=" footer__item">
+					<div class="footer__item__title">
+						Телефон контактного центра:
+					</div>
+
+					<a href="tel:8 800 505 66 00" class="phone__link">
+						8 800 505 66 00
+					</a>
+				</div>
+
+				<div class="footer__item">
+					<div class="footer__item__title">
+						Для обратной связи:
+					</div>
+
+					<div class="social">
+						<a href="#" class="social__item" target="_blank">
+							<img class="social__icon" width="34" height="34" src="images/dist/icons/viber.svg" alt="viber"
+								loading="lazy">
+						</a>
+						<a href="#" class="social__item" target="_blank">
+							<img class="social__icon" width="34" height="34" src="images/dist/icons/telegram.svg" alt="telegram"
+								loading="lazy">
+						</a>
+						<a href="#" class="social__item" target="_blank">
+							<img class="social__icon" width="34" height="34" src="images/dist/icons/whatsapp.svg" alt="whatsapp"
+								loading="lazy">
+						</a>
+						<a href="#" class="social__item" target="_blank">
+							<img class="social__icon" width="34" height="34" src="images/dist/icons/mail.svg" alt="mail"
+								loading="lazy">
+						</a>
+						<a href="#" class="social__item" target="_blank">
+							<img class="social__icon" width="34" height="34" src="images/dist/icons/messendger.svg" alt="messendger"
+								loading="lazy">
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </footer>
+
+<!-- <div class="mask"></div>
+
+<div class="modal">
+	<div class="modal__wrapper">
+		<div class="modal__title">
+			Вы успешно
+			зарегистрировались:
+		</div>
+
+		<div class="modal__content">
+			<p class="modal__suptitle">
+				XVIII век. «Русская Европа или Город вопреки»
+			</p>
+
+			<div class="modal__summary">
+				<p class="modal__text">
+					Дата: <span class="modal__strong">1 августа</span>
+				</p>
+				<p class="modal__text">
+					Место: <span class="modal__strong">Пл. Островского</span>
+				</p>
+				<p class="modal__text">
+					Начало регистрации: <span class="modal__strong">14:15</span>
+				</p>
+			</div>
+		</div>
+
+		<button class="modal__close" type="button">
+			<span></span>
+		</button>
+	</div>
+</div> -->
 
 <script src="js/include/jquery.min.js"></script>
 <script src="js/app.min.js"></script>

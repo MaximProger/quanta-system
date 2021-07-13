@@ -1,0 +1,316 @@
+.routes {
+  position: relative;
+
+  padding-top: 104px;
+  padding-bottom: 50px;
+
+  .container {
+    position: relative;
+    z-index: 4;
+  }
+}
+
+.routes__title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 55px;
+
+  margin-bottom: 58px;
+
+  text-align: center;
+
+  color: #fff;
+}
+
+.routes__list {
+  margin-bottom: 50px;
+}
+
+.routes__item {
+  position: relative;
+
+  margin-bottom: 74px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.routes__wrapper {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+
+  &--map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    visibility: hidden;
+
+    width: 100%;
+    height: 100%;
+
+    transition: all 0.2s ease;
+
+    opacity: 0;
+
+    .routes__content__wrapper {
+      justify-content: flex-start;
+    }
+
+    .routes__item__title {
+      margin-bottom: 30px;
+    }
+
+    .routes__text__list {
+      max-width: 442px;
+      margin-bottom: 15px;
+    }
+
+    .routes__text {
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &--active {
+    visibility: visible;
+
+    opacity: 1;
+  }
+}
+
+.routes__img {
+  display: block;
+
+  max-height: 100%;
+
+  border-radius: 10px 0px 0px 10px;
+}
+
+.routes__content {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 640px;
+  width: 100%;
+  padding: 40px 66px 55px 70px;
+
+  background: #ffffff;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.routes__content__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  width: 100%;
+  height: 100%;
+}
+
+.routes__item__title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+
+  margin-bottom: 20px;
+}
+
+.routes__text__list {
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 497px;
+}
+
+.routes__text {
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.routes__text__title {
+  font-weight: 600;
+
+  display: block;
+}
+
+.routes__bottom {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.routes__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.routes__places {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.routes__places__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.routes__places__icon {
+  margin-right: 8px;
+}
+
+.routes__places__text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.routes__places__dost {
+  margin: 1.5px 0;
+  margin-left: 4px;
+}
+
+.routes__map {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+
+  padding: 0;
+
+  cursor: pointer;
+  transition: all 0.2s linear;
+
+  border: none;
+  background: none;
+  color: $blue;
+
+  &:hover {
+    color: #157b8b;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    cursor: auto;
+
+    color: #93a2bb;
+  }
+}
+
+.routes__btn {
+  z-index: 3;
+}
+
+.routes__close {
+  line-height: 1;
+
+  position: absolute;
+  top: 48px;
+  right: 46px;
+  z-index: 2;
+
+  padding: 0;
+
+  cursor: pointer;
+
+  background: none;
+  border: none;
+
+  span {
+    display: inline-block;
+
+    width: 17px;
+    height: 17px;
+
+    transition: all 0.2s linear;
+
+    background: url("../../images/dist/icons/close.svg") no-repeat center;
+  }
+
+  &:hover {
+    span {
+      background: url("../../images/dist/icons/close--hover.svg") no-repeat
+        center;
+    }
+  }
+}
+
+.routes__description {
+  display: flex;
+  justify-content: flex-end;
+
+  padding-right: 40px;
+}
+
+.routes__description__text {
+  font-size: 12px;
+  line-height: 16px;
+
+  max-width: 600px;
+  width: 100%;
+
+  color: #fff;
+}
+
+.routes__description__link {
+  font-weight: 600;
+
+  text-decoration: none;
+
+  color: #fff;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.routes__bg {
+  position: absolute;
+  z-index: 3;
+
+  &--1 {
+    top: 392px;
+    right: 0;
+    z-index: 5;
+  }
+
+  &--2 {
+    top: 549px;
+    left: 0;
+  }
+
+  &--3 {
+    top: 1166px;
+    right: 0;
+  }
+
+  &--4 {
+    bottom: -199px;
+    left: 0;
+  }
+
+  &--eye {
+    top: 536px;
+    left: 65px;
+  }
+}

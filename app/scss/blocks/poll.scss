@@ -1,0 +1,299 @@
+.poll {
+  max-width: 439px;
+  width: 100%;
+}
+
+.poll__title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+
+  margin-bottom: 22px;
+}
+
+.poll__item {
+  position: relative;
+
+  width: 100%;
+}
+
+.poll__item__input {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+
+  height: 65px;
+  width: 100%;
+  padding: 0 24px;
+
+  color: $textcolor;
+  background: #ffffff;
+  border: 1px solid $blue;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  &::placeholder {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #768197;
+  }
+
+  &::-webkit-calendar-picker-indicator {
+    color: transparent;
+    opacity: 1;
+    background: url("../../images/dist/icons/akar-icons_calendar.svg") no-repeat
+      center;
+    background-size: contain;
+  }
+
+  &--calendar {
+    padding-right: 15px;
+  }
+
+  &--number {
+    appearance: textfield;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      display: none;
+    }
+  }
+}
+
+.poll__item__label {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+
+  position: absolute;
+  left: 24px;
+  top: -6px;
+  z-index: 2;
+
+  display: inline-block;
+
+  padding: 0 4px;
+
+  color: $blue;
+  background: #fff;
+}
+
+.poll__line {
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--code {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .poll__item {
+      width: 212px;
+      margin-right: 13px;
+    }
+  }
+}
+
+.poll__hint {
+  padding: 0;
+
+  cursor: pointer;
+  transition: all 0.2s linear;
+
+  background: none;
+  border: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.poll__select {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+
+  position: relative;
+
+  border: 1px solid #239fb3;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  &--show {
+    border-radius: 4px 4px 0 0;
+    border-bottom: transparent;
+
+    .poll__select__arrow {
+      transform: none;
+    }
+
+    .poll__select__list {
+      display: block;
+    }
+  }
+}
+
+.poll__select__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 65px;
+  padding: 0 24px;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.poll__select__list {
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  z-index: 4;
+
+  display: none;
+
+  width: calc(100% + 2px);
+
+  transform: translateX(-50%);
+
+  border: 1px solid $blue;
+  border-radius: 0 0 4px 4px;
+  background: #fff;
+}
+
+.poll__select__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 0 24px;
+  height: 65px;
+
+  transition: all 0.2s linear;
+  cursor: pointer;
+
+  border-bottom: 1px solid $blue;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  &:hover {
+    background: rgba($color: #000000, $alpha: 0.1);
+  }
+}
+
+.poll__select__arrow {
+  transition: all 0.2s linear;
+  transform: rotate(-180deg);
+}
+
+.poll__number__btn {
+  line-height: 1;
+
+  position: absolute;
+  right: 20px;
+
+  padding: 0;
+
+  cursor: pointer;
+  transition: all 0.2s linear;
+
+  background: none;
+  border: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  span {
+    display: inline-block;
+
+    width: 14px;
+    height: 8px;
+
+    background: url("../../images/dist/icons/arrow.svg") no-repeat center;
+  }
+}
+
+.poll__number__plus {
+  top: 19px;
+}
+
+.poll__number__minus {
+  bottom: 15px;
+
+  transform: rotate(-180deg);
+}
+
+.poll__checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.poll__checkbox + .poll__checkbox__label {
+  font-size: 10px;
+  line-height: 14px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  transition: all 0.2s linear;
+
+  color: #000000;
+}
+.poll__checkbox + .poll__checkbox__label::before {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  transition: all 0.2s linear;
+  border: 1px solid $blue;
+  border-radius: 3px;
+  margin-right: 14px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+
+.poll__checkbox:checked + .poll__checkbox__label::before {
+  background-image: url("../../images/dist/icons/good.svg");
+}
+
+.poll__link {
+  font-weight: 600;
+
+  display: inline;
+
+  text-decoration: none;
+
+  color: $blue;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.poll__submit {
+  width: 100%;
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $mobile) {
+}
