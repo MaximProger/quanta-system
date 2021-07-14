@@ -2233,6 +2233,10 @@ body {
     height: 50px;
   }
 
+  .onescreen {
+    height: 100vh;
+  }
+
   .connection__inner {
     padding: 30px 15px;
   }

@@ -133,6 +133,7 @@ $(document).ready(function () {
 
     $(".header__wrapper").toggleClass("header__wrapper--active");
     $("html").toggleClass("noscroll");
+    $("html").toggleClass("onescreen");
 
     if ($(this).hasClass("active")) {
       overlay(true);
@@ -146,6 +147,7 @@ $(document).ready(function () {
     $("#nav__toggle").removeClass("active");
     $(".header__wrapper").removeClass("header__wrapper--active");
     $("html").removeClass("noscroll");
+    $("html").removeClass("onescreen");
     overlay(false);
   });
 

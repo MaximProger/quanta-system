@@ -999,10 +999,10 @@ body {
 .poll__item__input--calendar {
   padding-right: 15px;
   min-width: 100%;
-  -../ima: none;
+  -webkit-appearance: none;
 }
 .poll__item__input--number {
-  -../ima: textfield;
+  -webkit-appearance: textfield;
   -moz-appearance: textfield;
   appearance: textfield;
 }
@@ -1983,6 +1983,9 @@ body {
   .btn {
     height: 50px;
   }
+  .onescreen {
+    height: 100vh;
+  }
   .connection__inner {
     padding: 30px 15px;
   }
@@ -2262,7 +2265,7 @@ body {
     width: 170px;
   }
 }
-@supports (-../ima: none) {
+@supports (-webkit-appearance: none) {
   .main__grain {
     background: url(../images/dist/grain.webp) repeat;
   }
@@ -2307,7 +2310,7 @@ body {
   }
 }
 @media (max-width: 767px) {
-  @supports (-../ima: none) {
+  @supports (-webkit-appearance: none) {
     .schedule__btns .slick-arrow {
       background: url(../images/dist/icons/arrow.svg) no-repeat center;
     }
