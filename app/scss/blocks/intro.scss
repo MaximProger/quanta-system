@@ -38,11 +38,10 @@
   position: relative;
 
   margin-bottom: 36px;
+  max-width: 777px;
   width: fit-content;
 
   span {
-    display: block;
-
     background: $gradient_r;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -181,6 +180,8 @@
   .intro__title {
     font-size: 48px;
     line-height: 1.2;
+
+    max-width: 310px;
   }
 
   .intro__text {

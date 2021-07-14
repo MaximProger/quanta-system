@@ -701,13 +701,13 @@ body {
   line-height: 115px;
   position: relative;
   margin-bottom: 36px;
+  max-width: 777px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
 .intro__title span {
-  display: block;
   background: -o-linear-gradient(172.72deg, #812990 22.88%, #ed1846 60.52%, #fbb306 98.17%);
   background: linear-gradient(277.28deg, #812990 22.88%, #ed1846 60.52%, #fbb306 98.17%);
   -webkit-background-clip: text;
@@ -2318,6 +2318,7 @@ body {
   .intro__title {
     font-size: 48px;
     line-height: 1.2;
+    max-width: 310px;
   }
 
   .intro__text {

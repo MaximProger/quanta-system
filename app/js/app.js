@@ -137,8 +137,16 @@ $(document).ready(function () {
 
     if ($(this).hasClass("active")) {
       overlay(true);
+
+      document.ontouchmove = function (e) {
+        e.preventDefault();
+      };
     } else {
       overlay(false);
+
+      document.ontouchmove = function (e) {
+        return true;
+      };
     }
   });
 
