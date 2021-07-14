@@ -648,6 +648,7 @@ body {
   width: fit-content;
 }
 .intro__title span {
+  display: block;
   background: -o-linear-gradient(
     172.72deg,
     #812990 22.88%,
@@ -2064,6 +2065,10 @@ body {
   }
   .poll__select {
     font-size: 14px;
+  }
+  .poll__item__input--calendar {
+    -webkit-appearance: none;
+    min-width: 100%;
   }
   .routes {
     padding: 50px 0;

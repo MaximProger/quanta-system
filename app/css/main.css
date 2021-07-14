@@ -707,6 +707,7 @@ body {
 }
 
 .intro__title span {
+  display: block;
   background: -o-linear-gradient(172.72deg, #812990 22.88%, #ed1846 60.52%, #fbb306 98.17%);
   background: linear-gradient(277.28deg, #812990 22.88%, #ed1846 60.52%, #fbb306 98.17%);
   -webkit-background-clip: text;
@@ -2337,6 +2338,11 @@ body {
 
   .poll__select {
     font-size: 14px;
+  }
+
+  .poll__item__input--calendar {
+    -webkit-appearance: none;
+    min-width: 100%;
   }
 
   .routes {

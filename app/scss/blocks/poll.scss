@@ -333,4 +333,11 @@
   .poll__select {
     font-size: 14px;
   }
+
+  .poll__item__input {
+    &--calendar {
+      -webkit-appearance: none;
+      min-width: 100%;
+    }
+  }
 }

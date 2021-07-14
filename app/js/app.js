@@ -133,6 +133,12 @@ $(document).ready(function () {
 
     $(".header__wrapper").toggleClass("header__wrapper--active");
     $("html").toggleClass("noscroll");
+
+    if ($(this).hasClass("active")) {
+      overlay(true);
+    } else {
+      overlay(false);
+    }
   });
 
   // Навигация
@@ -140,6 +146,7 @@ $(document).ready(function () {
     $("#nav__toggle").removeClass("active");
     $(".header__wrapper").removeClass("header__wrapper--active");
     $("html").removeClass("noscroll");
+    overlay(false);
   });
 
   // Подробнее
@@ -161,6 +168,10 @@ $(document).ready(function () {
       infinite: true,
       centerMode: false,
       autoplay: false,
+    });
+
+    $("#scheduleSlider").on("afterChange", function () {
+      $("#scheduleSlider .slick-current .schedule__btn").click();
     });
   }
 

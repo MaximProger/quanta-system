@@ -41,6 +41,8 @@
   width: fit-content;
 
   span {
+    display: block;
+
     background: $gradient_r;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
