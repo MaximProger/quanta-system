@@ -2196,6 +2196,11 @@ body {
   .schedule__bg--5 {
     z-index: 3;
   }
+
+  .schedule__table__btn {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2549,6 +2554,7 @@ body {
 
   .schedule__table__btn {
     height: 40px;
+    width: 170px;
   }
 }
 @supports (-webkit-appearance:none){
