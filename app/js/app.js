@@ -157,6 +157,9 @@ $(document).ready(function () {
     $("html").removeClass("noscroll");
     $("html").removeClass("onescreen");
     overlay(false);
+    document.ontouchmove = function (e) {
+      return true;
+    };
   });
 
   // Подробнее
