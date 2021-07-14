@@ -54,6 +54,9 @@
 
   &--calendar {
     padding-right: 15px;
+    min-width: 100%;
+
+    -webkit-appearance: none;
   }
 
   &--number {
@@ -72,6 +75,23 @@
   //     color: $red;
   //   }
   // }
+}
+
+.poll__item__icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  z-index: 2;
+
+  display: inline-block;
+
+  width: 22px;
+  height: 22px;
+
+  transform: translateY(-50%);
+
+  background: url("../../images/dist/icons/akar-icons_calendar.svg") no-repeat
+    center;
 }
 
 .poll__item__label {
@@ -332,12 +352,5 @@
 
   .poll__select {
     font-size: 14px;
-  }
-
-  .poll__item__input {
-    &--calendar {
-      -webkit-appearance: none;
-      min-width: 100%;
-    }
   }
 }

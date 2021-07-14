@@ -1092,6 +1092,8 @@ body {
 
 .poll__item__input--calendar {
   padding-right: 15px;
+  min-width: 100%;
+  -webkit-appearance: none;
 }
 
 .poll__item__input--number {
@@ -1103,6 +1105,20 @@ body {
 .poll__item__input--number::-webkit-outer-spin-button,
 .poll__item__input--number::-webkit-inner-spin-button {
   display: none;
+}
+
+.poll__item__icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  z-index: 2;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: url("../../images/dist/icons/akar-icons_calendar.svg") no-repeat center;
 }
 
 .poll__item__label {
@@ -2340,11 +2356,6 @@ body {
     font-size: 14px;
   }
 
-  .poll__item__input--calendar {
-    -webkit-appearance: none;
-    min-width: 100%;
-  }
-
   .routes {
     padding: 50px 0;
   }
@@ -2572,6 +2583,7 @@ body {
 .modal__close span{background:url("../../images/dist/icons/close.svg") no-repeat center}
 .modal__close:hover span{background:url("../../images/dist/icons/close--hover.svg") no-repeat center}
 .poll__item__input::-webkit-calendar-picker-indicator{background:url("../../images/dist/icons/akar-icons_calendar.svg") no-repeat center}
+.poll__item__icon{background:url("../../images/dist/icons/akar-icons_calendar.svg") no-repeat center}
 .poll__number__btn span{background:url("../../images/dist/icons/arrow.svg") no-repeat center}
 .poll__checkbox:checked + .poll__checkbox__label::before{background-image:url("../../images/dist/icons/good.svg")}
 .routes__close span{background:url("../../images/dist/icons/close.svg") no-repeat center}
