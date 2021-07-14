@@ -17,6 +17,7 @@
 	<link rel="icon" href="images/favicon.png">
 
 	<link rel="stylesheet" href="css/include/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/include/slick.css">
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
@@ -30,37 +31,44 @@
 					<img class="logo__img" width="173" height="29" src="images/dist/icons/R-Smile-Logo-1.svg" alt="R-Smile"
 						loading="lazy">
 				</a>
-				<nav class="nav">
-					<ul class="nav__list">
-						<li class="nav__item">
-							<button type="button" class="nav__btn" data-scroll="#routes">
-								О маршрутах
-							</button>
-						</li>
+				<div class="header__wrapper">
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<button type="button" class="nav__btn" data-scroll="#routes">
+									О маршрутах
+								</button>
+							</li>
 
-						<li class="nav__item">
-							<button type="button" class="nav__btn" data-scroll="#schedule">
-								Расписание
-							</button>
-						</li>
+							<li class="nav__item">
+								<button type="button" class="nav__btn" data-scroll="#schedule">
+									Расписание
+								</button>
+							</li>
 
-						<li class="nav__item">
-							<button type="button" class="nav__btn" data-scroll="#connection">
-								Анкета
-							</button>
-						</li>
-					</ul>
-				</nav>
+							<li class="nav__item">
+								<button type="button" class="nav__btn" data-scroll="#connection">
+									Анкета
+								</button>
+							</li>
+						</ul>
+					</nav>
 
-				<div class="phone__item">
-					<span class="phone__text">
-						Контактный центр:
-					</span>
+					<div class="phone__item">
+						<span class="phone__text">
+							Контактный центр:
+						</span>
 
-					<a href="tel:8 800 505 66 00" class="phone__link">
-						8 800 505 66 00
-					</a>
+						<a href="tel:8 800 505 66 00" class="phone__link">
+							8 800 505 66 00
+						</a>
+					</div>
 				</div>
+
+				<button class="nav-toggle no-xl md" id="nav__toggle" type="button">
+					<span class="nav-toggle__item">Menu</span>
+				</button>
+
 			</div>
 		</div>
 	</header>

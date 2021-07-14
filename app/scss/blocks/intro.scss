@@ -155,7 +155,46 @@
 }
 
 @media (max-width: $tablet) {
+  .intro__title__img {
+    display: none;
+  }
+
+  .intro__bus {
+    display: none;
+  }
 }
 
 @media (max-width: $mobile) {
+  .intro {
+    padding: 50px 0;
+  }
+
+  .intro__suptitle {
+    font-size: 18px;
+    line-height: 1.2;
+
+    margin-bottom: 10px;
+  }
+
+  .intro__title {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+
+  .intro__text {
+    display: none;
+  }
+
+  .intro__link {
+    margin-bottom: 35px;
+  }
+
+  .intro__ellipse {
+    display: none;
+  }
+
+  .intro__btn {
+    margin-right: 0;
+    width: 100%;
+  }
 }

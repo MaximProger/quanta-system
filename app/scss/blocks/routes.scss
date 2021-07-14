@@ -314,3 +314,132 @@
     left: 65px;
   }
 }
+
+@media (max-width: 1440px) {
+  .routes__bg {
+    &--1 {
+      z-index: 3;
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .routes__item {
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .routes__wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .routes__img {
+    width: 100%;
+
+    border-radius: 10px 10px 0 0;
+  }
+
+  .routes__content {
+    padding: 40px;
+    height: 100%;
+
+    border-radius: 0 0 10px 10px;
+  }
+
+  .routes__btn {
+    width: 250px;
+  }
+
+  .routes__description {
+    justify-content: center;
+
+    padding-right: 0;
+
+    text-align: center;
+  }
+
+  .routes__bg {
+    max-width: 40%;
+
+    &--1 {
+      z-index: 3;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .routes {
+    padding: 50px 0;
+  }
+
+  .routes__title {
+    font-size: 24px;
+    line-height: 1.2;
+
+    margin-bottom: 30px;
+  }
+
+  .routes__item {
+    margin-bottom: 40px;
+  }
+
+  .routes__wrapper {
+    &--map {
+      .routes__item__title {
+        margin-bottom: 20px;
+      }
+
+      .routes__text {
+        margin-bottom: 7px;
+      }
+    }
+  }
+
+  .routes__content {
+    padding: 30px 25px;
+    min-height: 470px;
+  }
+
+  .routes__item__title {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .routes__bottom {
+    flex-direction: column;
+  }
+
+  .routes__info {
+    margin-bottom: 35px;
+  }
+
+  .routes__places {
+    margin-bottom: 10px;
+  }
+
+  .routes__btn {
+    width: 100%;
+  }
+
+  .routes__text__list {
+    margin-bottom: 20px;
+  }
+
+  .routes__text__more {
+    font-weight: 600;
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: $blue;
+  }
+
+  .routes__close {
+    top: 20px;
+    right: 26px;
+  }
+}

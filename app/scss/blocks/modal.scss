@@ -1,0 +1,112 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+
+  display: none;
+
+  max-width: 610px;
+  width: 100%;
+
+  transform: translate(-50%, -50%);
+
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.modal__wrapper {
+  position: relative;
+
+  padding: 39px;
+  padding-bottom: 48px;
+}
+
+.modal__title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+
+  margin-bottom: 28px;
+
+  text-align: center;
+}
+
+.modal__suptitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+
+  margin-bottom: 20px;
+
+  text-align: center;
+}
+
+.modal__content {
+  text-align: center;
+}
+
+.modal__suptitle {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.modal__strong {
+  font-weight: 600;
+}
+
+.modal__close {
+  line-height: 1;
+
+  position: absolute;
+  top: 31px;
+  right: 37px;
+  z-index: 2;
+
+  padding: 0;
+
+  cursor: pointer;
+
+  background: none;
+  border: none;
+
+  span {
+    display: inline-block;
+
+    width: 17px;
+    height: 17px;
+
+    transition: all 0.2s linear;
+
+    background: url("../../images/dist/icons/close.svg") no-repeat center;
+  }
+
+  &:hover {
+    span {
+      background: url("../../images/dist/icons/close--hover.svg") no-repeat
+        center;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .modal {
+    max-width: 90%;
+  }
+
+  .modal__wrapper {
+    padding: 25px 15px;
+  }
+
+  .modal__title {
+    font-size: 18px;
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+  }
+
+  .modal__close {
+    top: 15px;
+    right: 15px;
+  }
+}

@@ -31,8 +31,45 @@
   justify-content: space-between;
 }
 
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-left: 110px;
+  width: 100%;
+}
+
 @media (max-width: $tablet) {
+  .header__wrapper {
+    // display: none;
+    position: absolute;
+    top: 79px;
+    left: 0;
+    z-index: 7;
+
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: calc(100vh - 79px);
+    padding-left: 0;
+
+    transition: all 0.2s linear;
+    transform: translateX(-100%);
+
+    background: #fff;
+
+    &--active {
+      transform: translateX(0);
+    }
+  }
 }
 
 @media (max-width: $mobile) {
+  .header {
+    &::before {
+      display: none;
+    }
+  }
 }

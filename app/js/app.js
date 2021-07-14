@@ -60,4 +60,115 @@ $(document).ready(function () {
     const select = $(this).parents(".poll__select");
     select.removeClass("poll__select--show");
   });
+
+  // Модальные окна
+  function overlay(show) {
+    if (show) {
+      var top = $(window).scrollTop();
+      var left = $(window).scrollLeft();
+      $(window).scroll(function () {
+        $(this).scrollTop(top).scrollLeft(left);
+      });
+    } else {
+      $(window).unbind("scroll");
+    }
+  }
+
+  function closeModals() {
+    $(".modal").slideUp();
+    $(".mask").fadeOut();
+    overlay(false);
+  }
+
+  function openModal(modalId) {
+    $(modalId).slideDown();
+    $(".mask").fadeIn();
+    overlay(true);
+  }
+
+  $(".mask").click(function (evt) {
+    evt.preventDefault();
+
+    closeModals();
+  });
+
+  $(".modal__close").click(function (evt) {
+    evt.preventDefault();
+
+    closeModals();
+  });
+
+  $(document).keydown((evt) => {
+    if (evt.keyCode == 27) {
+      closeModals();
+    }
+  });
+
+  // Форма
+  $("#pollForm").submit(function (evt) {
+    evt.preventDefault();
+
+    openModal($("#successfulRegistration"));
+  });
+
+  $("#pollSubmit").click(() => {
+    $(".poll__item__input:invalid").css("border-color", "#ED1846");
+    $(".poll__item__input:invalid ~ .poll__item__label").css(
+      "color",
+      "#ED1846"
+    );
+
+    $(".poll__item__input:valid").css("border-color", "#239FB3");
+    $(".poll__item__input:valid ~ .poll__item__label").css("color", "#239FB3");
+  });
+
+  // Макса для телефона
+  $("#phone").mask("+7 (999) 999 - 9999");
+
+  // Бургер меню
+  $("#nav__toggle").click(function (evt) {
+    evt.preventDefault();
+
+    $(this).toggleClass("active");
+
+    $(".header__wrapper").toggleClass("header__wrapper--active");
+    $("html").toggleClass("noscroll");
+  });
+
+  // Навигация
+  $(".nav__btn").click(() => {
+    $("#nav__toggle").removeClass("active");
+    $(".header__wrapper").removeClass("header__wrapper--active");
+    $("html").removeClass("noscroll");
+  });
+
+  // Подробнее
+  $(".routes__text__more").click(function (evt) {
+    evt.preventDefault();
+
+    $(this).hide();
+
+    const routesTextList = $(this).parents(".routes__text__list");
+    const hiddenRoutesText = routesTextList.find(".no-xs");
+    hiddenRoutesText.removeClass("no-xs");
+  });
+
+  // Слайдер в расписании
+  if ($(window).width() <= 767) {
+    $("#scheduleSlider").not(".slick-initialized").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      centerMode: false,
+      autoplay: false,
+    });
+  }
+
+  // Таблицы
+  $(".schedule__table__header").click(function (evt) {
+    evt.preventDefault();
+
+    const scheduleTable = $(this).parents(".schedule__table");
+    scheduleTable.toggleClass("schedule__table--active");
+  });
 });

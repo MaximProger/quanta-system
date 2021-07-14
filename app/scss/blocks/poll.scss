@@ -64,6 +64,14 @@
       display: none;
     }
   }
+
+  // &:invalid {
+  //   border-color: $red;
+
+  //   & ~ .poll__item__label {
+  //     color: $red;
+  //   }
+  // }
 }
 
 .poll__item__label {
@@ -274,6 +282,10 @@
   background-image: url("../../images/dist/icons/good.svg");
 }
 
+// .poll__checkbox:invalid + .poll__checkbox__label::before {
+//   border-color: $red;
+// }
+
 .poll__link {
   font-weight: 600;
 
@@ -293,7 +305,32 @@
 }
 
 @media (max-width: $tablet) {
+  .poll {
+    max-width: 600px;
+  }
 }
 
 @media (max-width: $mobile) {
+  .poll__title {
+    font-size: 24px;
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+  }
+
+  .poll__line {
+    .col-12 {
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .poll__select {
+    font-size: 14px;
+  }
 }

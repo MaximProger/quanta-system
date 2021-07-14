@@ -37,6 +37,10 @@
 
 .connection__line {
   margin-bottom: 22px;
+
+  &.no-xl {
+    display: none;
+  }
 }
 
 .connection__hashtag {
@@ -77,8 +81,51 @@
   }
 }
 
+@media (max-width: 1440px) {
+  .connection__bg {
+    &--7 {
+      z-index: 3;
+    }
+  }
+}
+
 @media (max-width: $tablet) {
+  .connection {
+    bottom: 0;
+
+    padding-bottom: 44px;
+  }
+
+  .connection__inner {
+    justify-content: center;
+
+    padding: 70px 50px;
+  }
+
+  .connection__content {
+    display: none;
+  }
+
+  .connection__bg {
+    max-width: 40%;
+
+    &--7 {
+      z-index: 3;
+    }
+  }
 }
 
 @media (max-width: $mobile) {
+  .connection__inner {
+    padding: 30px 15px;
+  }
+
+  .connection__line {
+    margin-bottom: 35px;
+
+    &.xs {
+      display: flex;
+      justify-content: center;
+    }
+  }
 }

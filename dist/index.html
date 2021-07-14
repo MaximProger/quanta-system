@@ -18,6 +18,7 @@
 	<link rel="icon" href="images/favicon.png">
 
 	<link rel="stylesheet" href="css/include/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/include/slick.css">
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
@@ -31,37 +32,44 @@
 					<img class="logo__img" width="173" height="29" src="images/dist/icons/R-Smile-Logo-1.svg" alt="R-Smile"
 						loading="lazy">
 				</a>
-				<nav class="nav">
-					<ul class="nav__list">
-						<li class="nav__item">
-							<button type="button" class="nav__btn" data-scroll="#routes">
-								О маршрутах
-							</button>
-						</li>
+				<div class="header__wrapper">
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<button type="button" class="nav__btn" data-scroll="#routes">
+									О маршрутах
+								</button>
+							</li>
 
-						<li class="nav__item">
-							<button type="button" class="nav__btn" data-scroll="#schedule">
-								Расписание
-							</button>
-						</li>
+							<li class="nav__item">
+								<button type="button" class="nav__btn" data-scroll="#schedule">
+									Расписание
+								</button>
+							</li>
 
-						<li class="nav__item">
-							<button type="button" class="nav__btn" data-scroll="#connection">
-								Анкета
-							</button>
-						</li>
-					</ul>
-				</nav>
+							<li class="nav__item">
+								<button type="button" class="nav__btn" data-scroll="#connection">
+									Анкета
+								</button>
+							</li>
+						</ul>
+					</nav>
 
-				<div class="phone__item">
-					<span class="phone__text">
-						Контактный центр:
-					</span>
+					<div class="phone__item">
+						<span class="phone__text">
+							Контактный центр:
+						</span>
 
-					<a href="tel:8 800 505 66 00" class="phone__link">
-						8 800 505 66 00
-					</a>
+						<a href="tel:8 800 505 66 00" class="phone__link">
+							8 800 505 66 00
+						</a>
+					</div>
 				</div>
+
+				<button class="nav-toggle no-xl md" id="nav__toggle" type="button">
+					<span class="nav-toggle__item">Menu</span>
+				</button>
+
 			</div>
 		</div>
 	</header>
@@ -159,13 +167,14 @@
                           в
                           молодом городе. Первые жители, кто они были? Первая улица, где проходила? Первая площадь,
                           первый
-                          жилой дом , первый сад, первый гостиный двор, первая печатня, первый музей…
+                          жилой дом , первый сад, первый гостиный двор, первая печатня, первый музей… <a href="#"
+                            class="routes__text__more no-xl xs">Подробнее...</a>
                         </p>
-                        <p class="routes__text">
+                        <p class="routes__text no-xs">
                           Как рождались «русские европейцы»? Как появился «город вопреки»?
                           Почувствуем себя первыми петербуржцами на заболоченных берегах Невы.
                         </p>
-                        <p class="routes__text">
+                        <p class="routes__text no-xs">
                           <span class="routes__text__title">
                             Выйдем из автобуса на Троицкой площади.
                           </span>
@@ -276,7 +285,7 @@
                   <div class="routes__content">
                     <div class="routes__content__wrapper">
                       <h3 class="routes__item__title">
-                        XIX век. «Петербург – это<br>
+                        XIX век. «Петербург – это<br class="no-xs">
                         модно»
                       </h3>
 
@@ -288,13 +297,17 @@
                         <p class="routes__text">
                           Узнаем все тренды. Что было модно носить и где было круто кутить. С какой целью ходили в
                           театры
-                          и
-                          как флиртовали на балах. О чем следует говорить, чтобы блеснуть в светском обществе и какие
-                          темы
-                          сделают вас изгоем. Сколько стоит соответствовать моде и что ждет тех, кто не может себе это
-                          позволить.
+                          и <a href="#" class="routes__text__more no-xl xs">Подробнее...</a>
+                          <span class="no-xs">
+                            как флиртовали на балах.
+                            О чем следует говорить, чтобы блеснуть в
+                            светском обществе и какие
+                            темы
+                            сделают вас изгоем. Сколько стоит соответствовать моде и что ждет тех, кто не может себе это
+                            позволить.
+                          </span>
                         </p>
-                        <p class="routes__text">
+                        <p class="routes__text no-xs">
                           <span class="routes__text__title">
                             Выйдем из автобуса на Исаакиевской площади.
                           </span>
@@ -394,8 +407,8 @@
               <div class="routes__item">
                 <div class="routes__wrapper">
                   <picture decoding="async">
-                    <source type="image/webp" srcset="images/dist/routes/1.webp">
-                    <img class="routes__img" width="560" height="480" src="images/dist/routes/1.png" alt="route__img"
+                    <source type="image/webp" srcset="images/dist/routes/3.webp">
+                    <img class="routes__img" width="560" height="480" src="images/dist/routes/3.png" alt="route__img"
                       loading="lazy">
                   </picture>
 
@@ -413,13 +426,14 @@
                           в
                           молодом городе. Первые жители, кто они были? Первая улица, где проходила? Первая площадь,
                           первый
-                          жилой дом , первый сад, первый гостиный двор, первая печатня, первый музей…
+                          жилой дом , первый сад, первый гостиный двор, первая печатня, первый музей… <a href="#"
+                            class="routes__text__more no-xl xs">Подробнее...</a>
                         </p>
-                        <p class="routes__text">
+                        <p class="routes__text no-xs">
                           Как рождались «русские европейцы»? Как появился «город вопреки»?
                           Почувствуем себя первыми петербуржцами на заболоченных берегах Невы.
                         </p>
-                        <p class="routes__text">
+                        <p class="routes__text no-xs">
                           <span class="routes__text__title">
                             Выйдем из автобуса на Троицкой площади.
                           </span>
@@ -572,7 +586,7 @@
               Расписание экскурсий
             </h2>
 
-            <div class="schedule__btns">
+            <div class="schedule__btns" id="scheduleSlider">
               <button class="btn schedule__btn schedule__btn--active" type="button" data-tab="#content_1">
                 <span class="btn__text">
                   1 - 8 августа
@@ -602,19 +616,23 @@
             <div class="schedule__content schedule__content--active" id="content_1">
               <div class="schedule__ad">
                 <div class="schedule__ad__left">
-                  Продолжительность<br> экскурсии:
+                  Продолжительность<br class="no-md"> экскурсии:
                 </div>
 
                 <div class="schedule__ad__right">
-                  1,5-2 часа<br>
+                  1,5-2 часа<br class="no-md">
                   На каждом маршруте будет одна остановка с выходом из автобуса
                 </div>
               </div>
 
-              <div class="schedule__table">
+              <div class="schedule__table schedule__table--active">
                 <div class="schedule__table__header">
                   <div class="schedule__table__title">
                     Будние дни:
+
+                    <button class="schedule__table__title__btn no-xl xs" type="button">
+                      <span></span>
+                    </button>
                   </div>
 
                   <div class="schedule__table__info">
@@ -647,26 +665,31 @@
                         1
                       </div>
 
-                      <div class="schedule__table__item">
+                      <div class="schedule__table__item schedule__table__item--title">
                         XVIII век. «Русская Европа<br>
                         или Город вопреки»
                       </div>
 
-                      <div class="schedule__table__item">
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время
+                        </span>
                         14:00 - 15:30
                       </div>
 
-                      <div class="schedule__table__item">
-                        <div class="schedule__table__inner__wrapper">
-                          13:45
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время сбора
+                        </span>
+                        13:45
+                      </div>
 
-                          <button class="btn btn--small schedule__table__btn" type="button">
-                            <span class="btn__text">
-                              Забронировать
-                            </span>
-                          </button>
-                        </div>
-
+                      <div class="schedule__table__item schedule__table__item--btn">
+                        <button class="btn btn--small schedule__table__btn" type="button">
+                          <span class="btn__text">
+                            Забронировать
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -677,25 +700,30 @@
                         2
                       </div>
 
-                      <div class="schedule__table__item">
+                      <div class="schedule__table__item schedule__table__item--title">
                         XIX век. «Петербург – это модно»
                       </div>
 
-                      <div class="schedule__table__item">
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время
+                        </span>
                         16:30 - 18:00
                       </div>
 
-                      <div class="schedule__table__item">
-                        <div class="schedule__table__inner__wrapper">
-                          16:15
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время сбора
+                        </span>
+                        16:15
+                      </div>
 
-                          <button class="btn btn--small schedule__table__btn" type="button">
-                            <span class="btn__text">
-                              Забронировать
-                            </span>
-                          </button>
-                        </div>
-
+                      <div class="schedule__table__item schedule__table__item--btn">
+                        <button class="btn btn--small schedule__table__btn" type="button">
+                          <span class="btn__text">
+                            Забронировать
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -706,25 +734,30 @@
                         3
                       </div>
 
-                      <div class="schedule__table__item">
+                      <div class="schedule__table__item schedule__table__item--title">
                         XX век. «Жизнь в эпоху перемен»
                       </div>
 
-                      <div class="schedule__table__item">
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время
+                        </span>
                         19:00 - 20:30
                       </div>
 
-                      <div class="schedule__table__item">
-                        <div class="schedule__table__inner__wrapper">
-                          18:45
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время сбора
+                        </span>
+                        18:45
+                      </div>
 
-                          <button class="btn btn--small schedule__table__btn" type="button">
-                            <span class="btn__text">
-                              Забронировать
-                            </span>
-                          </button>
-                        </div>
-
+                      <div class="schedule__table__item schedule__table__item--btn">
+                        <button class="btn btn--small schedule__table__btn" type="button">
+                          <span class="btn__text">
+                            Забронировать
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -737,7 +770,11 @@
               <div class="schedule__table">
                 <div class="schedule__table__header">
                   <div class="schedule__table__title">
-                    Будние дни:
+                    Выходные дни:
+
+                    <button class="schedule__table__title__btn no-xl xs" type="button">
+                      <span></span>
+                    </button>
                   </div>
 
                   <div class="schedule__table__info">
@@ -770,26 +807,31 @@
                         1
                       </div>
 
-                      <div class="schedule__table__item">
+                      <div class="schedule__table__item schedule__table__item--title">
                         XVIII век. «Русская Европа<br>
                         или Город вопреки»
                       </div>
 
-                      <div class="schedule__table__item">
-                        14:00 - 15:30
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время
+                        </span>
+                        11:00 - 12:30
                       </div>
 
-                      <div class="schedule__table__item">
-                        <div class="schedule__table__inner__wrapper">
-                          13:45
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время сбора
+                        </span>
+                        10:45
+                      </div>
 
-                          <button class="btn btn--small schedule__table__btn" type="button">
-                            <span class="btn__text">
-                              Забронировать
-                            </span>
-                          </button>
-                        </div>
-
+                      <div class="schedule__table__item schedule__table__item--btn">
+                        <button class="btn btn--small schedule__table__btn" type="button">
+                          <span class="btn__text">
+                            Забронировать
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -800,25 +842,30 @@
                         2
                       </div>
 
-                      <div class="schedule__table__item">
+                      <div class="schedule__table__item schedule__table__item--title">
                         XIX век. «Петербург – это модно»
                       </div>
 
-                      <div class="schedule__table__item">
-                        16:30 - 18:00
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время
+                        </span>
+                        13:00 - 4:30
                       </div>
 
-                      <div class="schedule__table__item">
-                        <div class="schedule__table__inner__wrapper">
-                          16:15
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время сбора
+                        </span>
+                        12:45
+                      </div>
 
-                          <button class="btn btn--small schedule__table__btn" type="button">
-                            <span class="btn__text">
-                              Забронировать
-                            </span>
-                          </button>
-                        </div>
-
+                      <div class="schedule__table__item schedule__table__item--btn">
+                        <button class="btn btn--small schedule__table__btn" type="button">
+                          <span class="btn__text">
+                            Забронировать
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -829,25 +876,30 @@
                         3
                       </div>
 
-                      <div class="schedule__table__item">
+                      <div class="schedule__table__item schedule__table__item--title">
                         XX век. «Жизнь в эпоху перемен»
                       </div>
 
-                      <div class="schedule__table__item">
-                        19:00 - 20:30
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время
+                        </span>
+                        15:00 - 16:30
                       </div>
 
-                      <div class="schedule__table__item">
-                        <div class="schedule__table__inner__wrapper">
-                          18:45
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время сбора
+                        </span>
+                        14:45
+                      </div>
 
-                          <button class="btn btn--small schedule__table__btn" type="button">
-                            <span class="btn__text">
-                              Забронировать
-                            </span>
-                          </button>
-                        </div>
-
+                      <div class="schedule__table__item schedule__table__item--btn">
+                        <button class="btn btn--small schedule__table__btn" type="button">
+                          <span class="btn__text">
+                            Забронировать
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -861,19 +913,23 @@
             <div class="schedule__content" id="content_2">
               <div class="schedule__ad">
                 <div class="schedule__ad__left">
-                  Продолжительность<br> экскурсии:
+                  Продолжительность<br class="no-md"> экскурсии:
                 </div>
 
                 <div class="schedule__ad__right">
-                  1,5-2 часа<br>
+                  1,5-2 часа<br class="no-md">
                   На каждом маршруте будет одна остановка с выходом из автобуса
                 </div>
               </div>
 
-              <div class="schedule__table">
+              <div class="schedule__table schedule__table--active">
                 <div class="schedule__table__header">
                   <div class="schedule__table__title">
                     Будние дни:
+
+                    <button class="schedule__table__title__btn no-xl xs" type="button">
+                      <span></span>
+                    </button>
                   </div>
 
                   <div class="schedule__table__info">
@@ -906,25 +962,30 @@
                         1
                       </div>
 
-                      <div class="schedule__table__item">
+                      <div class="schedule__table__item schedule__table__item--title">
                         XIX век. «Петербург – это модно»
                       </div>
 
-                      <div class="schedule__table__item">
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время
+                        </span>
                         16:30 - 18:00
                       </div>
 
-                      <div class="schedule__table__item">
-                        <div class="schedule__table__inner__wrapper">
-                          16:15
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время сбора
+                        </span>
+                        16:15
+                      </div>
 
-                          <button class="btn btn--small schedule__table__btn" type="button">
-                            <span class="btn__text">
-                              Забронировать
-                            </span>
-                          </button>
-                        </div>
-
+                      <div class="schedule__table__item schedule__table__item--btn">
+                        <button class="btn btn--small schedule__table__btn" type="button">
+                          <span class="btn__text">
+                            Забронировать
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -935,25 +996,30 @@
                         2
                       </div>
 
-                      <div class="schedule__table__item">
+                      <div class="schedule__table__item schedule__table__item--title">
                         XX век. «Жизнь в эпоху перемен»
                       </div>
 
-                      <div class="schedule__table__item">
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время
+                        </span>
                         19:00 - 20:30
                       </div>
 
-                      <div class="schedule__table__item">
-                        <div class="schedule__table__inner__wrapper">
-                          18:45
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время сбора
+                        </span>
+                        18:45
+                      </div>
 
-                          <button class="btn btn--small schedule__table__btn" type="button">
-                            <span class="btn__text">
-                              Забронировать
-                            </span>
-                          </button>
-                        </div>
-
+                      <div class="schedule__table__item schedule__table__item--btn">
+                        <button class="btn btn--small schedule__table__btn" type="button">
+                          <span class="btn__text">
+                            Забронировать
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -964,30 +1030,34 @@
                         3
                       </div>
 
-                      <div class="schedule__table__item">
+                      <div class="schedule__table__item schedule__table__item--title">
                         XVIII век. «Русская Европа<br>
                         или Город вопреки»
                       </div>
 
-                      <div class="schedule__table__item">
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время
+                        </span>
                         14:00 - 15:30
                       </div>
 
-                      <div class="schedule__table__item">
-                        <div class="schedule__table__inner__wrapper">
-                          13:45
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время сбора
+                        </span>
+                        13:45
+                      </div>
 
-                          <button class="btn btn--small schedule__table__btn" type="button">
-                            <span class="btn__text">
-                              Забронировать
-                            </span>
-                          </button>
-                        </div>
-
+                      <div class="schedule__table__item schedule__table__item--btn">
+                        <button class="btn btn--small schedule__table__btn" type="button">
+                          <span class="btn__text">
+                            Забронировать
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
-
                 </div>
 
               </div>
@@ -995,7 +1065,11 @@
               <div class="schedule__table">
                 <div class="schedule__table__header">
                   <div class="schedule__table__title">
-                    Будние дни:
+                    Выходные дни:
+
+                    <button class="schedule__table__title__btn no-xl xs" type="button">
+                      <span></span>
+                    </button>
                   </div>
 
                   <div class="schedule__table__info">
@@ -1022,33 +1096,36 @@
                 </div>
 
                 <div class="schedule__table__body">
-
-
                   <div class="schedule__table__wrapper">
                     <div class="schedule__table__line">
                       <div class="schedule__table__item schedule__table__item--center">
                         1
                       </div>
 
-                      <div class="schedule__table__item">
+                      <div class="schedule__table__item schedule__table__item--title">
                         XIX век. «Петербург – это модно»
                       </div>
 
-                      <div class="schedule__table__item">
-                        16:30 - 18:00
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время
+                        </span>
+                        13:00 - 4:30
                       </div>
 
-                      <div class="schedule__table__item">
-                        <div class="schedule__table__inner__wrapper">
-                          16:15
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время сбора
+                        </span>
+                        12:45
+                      </div>
 
-                          <button class="btn btn--small schedule__table__btn" type="button">
-                            <span class="btn__text">
-                              Забронировать
-                            </span>
-                          </button>
-                        </div>
-
+                      <div class="schedule__table__item schedule__table__item--btn">
+                        <button class="btn btn--small schedule__table__btn" type="button">
+                          <span class="btn__text">
+                            Забронировать
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -1059,25 +1136,30 @@
                         2
                       </div>
 
-                      <div class="schedule__table__item">
+                      <div class="schedule__table__item schedule__table__item--title">
                         XX век. «Жизнь в эпоху перемен»
                       </div>
 
-                      <div class="schedule__table__item">
-                        19:00 - 20:30
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время
+                        </span>
+                        15:00 - 16:30
                       </div>
 
-                      <div class="schedule__table__item">
-                        <div class="schedule__table__inner__wrapper">
-                          18:45
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время сбора
+                        </span>
+                        14:45
+                      </div>
 
-                          <button class="btn btn--small schedule__table__btn" type="button">
-                            <span class="btn__text">
-                              Забронировать
-                            </span>
-                          </button>
-                        </div>
-
+                      <div class="schedule__table__item schedule__table__item--btn">
+                        <button class="btn btn--small schedule__table__btn" type="button">
+                          <span class="btn__text">
+                            Забронировать
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -1088,30 +1170,34 @@
                         3
                       </div>
 
-                      <div class="schedule__table__item">
+                      <div class="schedule__table__item schedule__table__item--title">
                         XVIII век. «Русская Европа<br>
                         или Город вопреки»
                       </div>
 
-                      <div class="schedule__table__item">
-                        14:00 - 15:30
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время
+                        </span>
+                        11:00 - 12:30
                       </div>
 
-                      <div class="schedule__table__item">
-                        <div class="schedule__table__inner__wrapper">
-                          13:45
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время сбора
+                        </span>
+                        10:45
+                      </div>
 
-                          <button class="btn btn--small schedule__table__btn" type="button">
-                            <span class="btn__text">
-                              Забронировать
-                            </span>
-                          </button>
-                        </div>
-
+                      <div class="schedule__table__item schedule__table__item--btn">
+                        <button class="btn btn--small schedule__table__btn" type="button">
+                          <span class="btn__text">
+                            Забронировать
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
-
 
                 </div>
 
@@ -1121,19 +1207,23 @@
             <div class="schedule__content" id="content_3">
               <div class="schedule__ad">
                 <div class="schedule__ad__left">
-                  Продолжительность<br> экскурсии:
+                  Продолжительность<br class="no-md"> экскурсии:
                 </div>
 
                 <div class="schedule__ad__right">
-                  1,5-2 часа<br>
+                  1,5-2 часа<br class="no-md">
                   На каждом маршруте будет одна остановка с выходом из автобуса
                 </div>
               </div>
 
-              <div class="schedule__table">
+              <div class="schedule__table schedule__table--active">
                 <div class="schedule__table__header">
                   <div class="schedule__table__title">
                     Будние дни:
+
+                    <button class="schedule__table__title__btn no-xl xs" type="button">
+                      <span></span>
+                    </button>
                   </div>
 
                   <div class="schedule__table__info">
@@ -1166,25 +1256,31 @@
                         1
                       </div>
 
-                      <div class="schedule__table__item">
-                        XX век. «Жизнь в эпоху перемен»
+                      <div class="schedule__table__item schedule__table__item--title">
+                        XVIII век. «Русская Европа<br>
+                        или Город вопреки»
                       </div>
 
-                      <div class="schedule__table__item">
-                        19:00 - 20:30
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время
+                        </span>
+                        14:00 - 15:30
                       </div>
 
-                      <div class="schedule__table__item">
-                        <div class="schedule__table__inner__wrapper">
-                          18:45
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время сбора
+                        </span>
+                        13:45
+                      </div>
 
-                          <button class="btn btn--small schedule__table__btn" type="button">
-                            <span class="btn__text">
-                              Забронировать
-                            </span>
-                          </button>
-                        </div>
-
+                      <div class="schedule__table__item schedule__table__item--btn">
+                        <button class="btn btn--small schedule__table__btn" type="button">
+                          <span class="btn__text">
+                            Забронировать
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -1195,26 +1291,30 @@
                         2
                       </div>
 
-                      <div class="schedule__table__item">
-                        XVIII век. «Русская Европа<br>
-                        или Город вопреки»
+                      <div class="schedule__table__item schedule__table__item--title">
+                        XIX век. «Петербург – это модно»
                       </div>
 
-                      <div class="schedule__table__item">
-                        14:00 - 15:30
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время
+                        </span>
+                        16:30 - 18:00
                       </div>
 
-                      <div class="schedule__table__item">
-                        <div class="schedule__table__inner__wrapper">
-                          13:45
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время сбора
+                        </span>
+                        16:15
+                      </div>
 
-                          <button class="btn btn--small schedule__table__btn" type="button">
-                            <span class="btn__text">
-                              Забронировать
-                            </span>
-                          </button>
-                        </div>
-
+                      <div class="schedule__table__item schedule__table__item--btn">
+                        <button class="btn btn--small schedule__table__btn" type="button">
+                          <span class="btn__text">
+                            Забронировать
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -1225,28 +1325,34 @@
                         3
                       </div>
 
-                      <div class="schedule__table__item">
-                        XIX век. «Петербург – это модно»
+                      <div class="schedule__table__item schedule__table__item--title">
+                        XX век. «Жизнь в эпоху перемен»
                       </div>
 
-                      <div class="schedule__table__item">
-                        16:30 - 18:00
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время
+                        </span>
+                        19:00 - 20:30
                       </div>
 
-                      <div class="schedule__table__item">
-                        <div class="schedule__table__inner__wrapper">
-                          16:15
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время сбора
+                        </span>
+                        18:45
+                      </div>
 
-                          <button class="btn btn--small schedule__table__btn" type="button">
-                            <span class="btn__text">
-                              Забронировать
-                            </span>
-                          </button>
-                        </div>
-
+                      <div class="schedule__table__item schedule__table__item--btn">
+                        <button class="btn btn--small schedule__table__btn" type="button">
+                          <span class="btn__text">
+                            Забронировать
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
+
 
                 </div>
 
@@ -1255,7 +1361,11 @@
               <div class="schedule__table">
                 <div class="schedule__table__header">
                   <div class="schedule__table__title">
-                    Будние дни:
+                    Выходные дни:
+
+                    <button class="schedule__table__title__btn no-xl xs" type="button">
+                      <span></span>
+                    </button>
                   </div>
 
                   <div class="schedule__table__info">
@@ -1288,25 +1398,31 @@
                         1
                       </div>
 
-                      <div class="schedule__table__item">
-                        XX век. «Жизнь в эпоху перемен»
+                      <div class="schedule__table__item schedule__table__item--title">
+                        XVIII век. «Русская Европа<br>
+                        или Город вопреки»
                       </div>
 
-                      <div class="schedule__table__item">
-                        19:00 - 20:30
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время
+                        </span>
+                        11:00 - 12:30
                       </div>
 
-                      <div class="schedule__table__item">
-                        <div class="schedule__table__inner__wrapper">
-                          18:45
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время сбора
+                        </span>
+                        10:45
+                      </div>
 
-                          <button class="btn btn--small schedule__table__btn" type="button">
-                            <span class="btn__text">
-                              Забронировать
-                            </span>
-                          </button>
-                        </div>
-
+                      <div class="schedule__table__item schedule__table__item--btn">
+                        <button class="btn btn--small schedule__table__btn" type="button">
+                          <span class="btn__text">
+                            Забронировать
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -1317,26 +1433,30 @@
                         2
                       </div>
 
-                      <div class="schedule__table__item">
-                        XVIII век. «Русская Европа<br>
-                        или Город вопреки»
+                      <div class="schedule__table__item schedule__table__item--title">
+                        XIX век. «Петербург – это модно»
                       </div>
 
-                      <div class="schedule__table__item">
-                        14:00 - 15:30
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время
+                        </span>
+                        13:00 - 4:30
                       </div>
 
-                      <div class="schedule__table__item">
-                        <div class="schedule__table__inner__wrapper">
-                          13:45
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время сбора
+                        </span>
+                        12:45
+                      </div>
 
-                          <button class="btn btn--small schedule__table__btn" type="button">
-                            <span class="btn__text">
-                              Забронировать
-                            </span>
-                          </button>
-                        </div>
-
+                      <div class="schedule__table__item schedule__table__item--btn">
+                        <button class="btn btn--small schedule__table__btn" type="button">
+                          <span class="btn__text">
+                            Забронировать
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -1347,28 +1467,34 @@
                         3
                       </div>
 
-                      <div class="schedule__table__item">
-                        XIX век. «Петербург – это модно»
+                      <div class="schedule__table__item schedule__table__item--title">
+                        XX век. «Жизнь в эпоху перемен»
                       </div>
 
-                      <div class="schedule__table__item">
-                        16:30 - 18:00
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время
+                        </span>
+                        15:00 - 16:30
                       </div>
 
-                      <div class="schedule__table__item">
-                        <div class="schedule__table__inner__wrapper">
-                          16:15
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время сбора
+                        </span>
+                        14:45
+                      </div>
 
-                          <button class="btn btn--small schedule__table__btn" type="button">
-                            <span class="btn__text">
-                              Забронировать
-                            </span>
-                          </button>
-                        </div>
-
+                      <div class="schedule__table__item schedule__table__item--btn">
+                        <button class="btn btn--small schedule__table__btn" type="button">
+                          <span class="btn__text">
+                            Забронировать
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
+
 
                 </div>
 
@@ -1378,19 +1504,23 @@
             <div class="schedule__content" id="content_4">
               <div class="schedule__ad">
                 <div class="schedule__ad__left">
-                  Продолжительность<br> экскурсии:
+                  Продолжительность<br class="no-md"> экскурсии:
                 </div>
 
                 <div class="schedule__ad__right">
-                  1,5-2 часа<br>
+                  1,5-2 часа<br class="no-md">
                   На каждом маршруте будет одна остановка с выходом из автобуса
                 </div>
               </div>
 
-              <div class="schedule__table">
+              <div class="schedule__table schedule__table--active">
                 <div class="schedule__table__header">
                   <div class="schedule__table__title">
                     Будние дни:
+
+                    <button class="schedule__table__title__btn no-xl xs" type="button">
+                      <span></span>
+                    </button>
                   </div>
 
                   <div class="schedule__table__info">
@@ -1423,26 +1553,30 @@
                         1
                       </div>
 
-                      <div class="schedule__table__item">
-                        XVIII век. «Русская Европа<br>
-                        или Город вопреки»
+                      <div class="schedule__table__item schedule__table__item--title">
+                        XIX век. «Петербург – это модно»
                       </div>
 
-                      <div class="schedule__table__item">
-                        14:00 - 15:30
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время
+                        </span>
+                        16:30 - 18:00
                       </div>
 
-                      <div class="schedule__table__item">
-                        <div class="schedule__table__inner__wrapper">
-                          13:45
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время сбора
+                        </span>
+                        16:15
+                      </div>
 
-                          <button class="btn btn--small schedule__table__btn" type="button">
-                            <span class="btn__text">
-                              Забронировать
-                            </span>
-                          </button>
-                        </div>
-
+                      <div class="schedule__table__item schedule__table__item--btn">
+                        <button class="btn btn--small schedule__table__btn" type="button">
+                          <span class="btn__text">
+                            Забронировать
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -1453,25 +1587,30 @@
                         2
                       </div>
 
-                      <div class="schedule__table__item">
-                        XIX век. «Петербург – это модно»
+                      <div class="schedule__table__item schedule__table__item--title">
+                        XX век. «Жизнь в эпоху перемен»
                       </div>
 
-                      <div class="schedule__table__item">
-                        16:30 - 18:00
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время
+                        </span>
+                        19:00 - 20:30
                       </div>
 
-                      <div class="schedule__table__item">
-                        <div class="schedule__table__inner__wrapper">
-                          16:15
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время сбора
+                        </span>
+                        18:45
+                      </div>
 
-                          <button class="btn btn--small schedule__table__btn" type="button">
-                            <span class="btn__text">
-                              Забронировать
-                            </span>
-                          </button>
-                        </div>
-
+                      <div class="schedule__table__item schedule__table__item--btn">
+                        <button class="btn btn--small schedule__table__btn" type="button">
+                          <span class="btn__text">
+                            Забронировать
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -1482,30 +1621,34 @@
                         3
                       </div>
 
-                      <div class="schedule__table__item">
-                        XX век. «Жизнь в эпоху перемен»
+                      <div class="schedule__table__item schedule__table__item--title">
+                        XVIII век. «Русская Европа<br>
+                        или Город вопреки»
                       </div>
 
-                      <div class="schedule__table__item">
-                        19:00 - 20:30
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время
+                        </span>
+                        14:00 - 15:30
                       </div>
 
-                      <div class="schedule__table__item">
-                        <div class="schedule__table__inner__wrapper">
-                          18:45
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время сбора
+                        </span>
+                        13:45
+                      </div>
 
-                          <button class="btn btn--small schedule__table__btn" type="button">
-                            <span class="btn__text">
-                              Забронировать
-                            </span>
-                          </button>
-                        </div>
-
+                      <div class="schedule__table__item schedule__table__item--btn">
+                        <button class="btn btn--small schedule__table__btn" type="button">
+                          <span class="btn__text">
+                            Забронировать
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
-
-
                 </div>
 
               </div>
@@ -1513,7 +1656,11 @@
               <div class="schedule__table">
                 <div class="schedule__table__header">
                   <div class="schedule__table__title">
-                    Будние дни:
+                    Выходные дни:
+
+                    <button class="schedule__table__title__btn no-xl xs" type="button">
+                      <span></span>
+                    </button>
                   </div>
 
                   <div class="schedule__table__info">
@@ -1546,26 +1693,30 @@
                         1
                       </div>
 
-                      <div class="schedule__table__item">
-                        XVIII век. «Русская Европа<br>
-                        или Город вопреки»
+                      <div class="schedule__table__item schedule__table__item--title">
+                        XIX век. «Петербург – это модно»
                       </div>
 
-                      <div class="schedule__table__item">
-                        14:00 - 15:30
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время
+                        </span>
+                        13:00 - 4:30
                       </div>
 
-                      <div class="schedule__table__item">
-                        <div class="schedule__table__inner__wrapper">
-                          13:45
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время сбора
+                        </span>
+                        12:45
+                      </div>
 
-                          <button class="btn btn--small schedule__table__btn" type="button">
-                            <span class="btn__text">
-                              Забронировать
-                            </span>
-                          </button>
-                        </div>
-
+                      <div class="schedule__table__item schedule__table__item--btn">
+                        <button class="btn btn--small schedule__table__btn" type="button">
+                          <span class="btn__text">
+                            Забронировать
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -1576,25 +1727,30 @@
                         2
                       </div>
 
-                      <div class="schedule__table__item">
-                        XIX век. «Петербург – это модно»
+                      <div class="schedule__table__item schedule__table__item--title">
+                        XX век. «Жизнь в эпоху перемен»
                       </div>
 
-                      <div class="schedule__table__item">
-                        16:30 - 18:00
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время
+                        </span>
+                        15:00 - 16:30
                       </div>
 
-                      <div class="schedule__table__item">
-                        <div class="schedule__table__inner__wrapper">
-                          16:15
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время сбора
+                        </span>
+                        14:45
+                      </div>
 
-                          <button class="btn btn--small schedule__table__btn" type="button">
-                            <span class="btn__text">
-                              Забронировать
-                            </span>
-                          </button>
-                        </div>
-
+                      <div class="schedule__table__item schedule__table__item--btn">
+                        <button class="btn btn--small schedule__table__btn" type="button">
+                          <span class="btn__text">
+                            Забронировать
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -1605,29 +1761,34 @@
                         3
                       </div>
 
-                      <div class="schedule__table__item">
-                        XX век. «Жизнь в эпоху перемен»
+                      <div class="schedule__table__item schedule__table__item--title">
+                        XVIII век. «Русская Европа<br>
+                        или Город вопреки»
                       </div>
 
-                      <div class="schedule__table__item">
-                        19:00 - 20:30
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время
+                        </span>
+                        11:00 - 12:30
                       </div>
 
-                      <div class="schedule__table__item">
-                        <div class="schedule__table__inner__wrapper">
-                          18:45
+                      <div class="schedule__table__item schedule__table__item--time">
+                        <span class="schedule__table__item__title no-xl xs">
+                          Время сбора
+                        </span>
+                        10:45
+                      </div>
 
-                          <button class="btn btn--small schedule__table__btn" type="button">
-                            <span class="btn__text">
-                              Забронировать
-                            </span>
-                          </button>
-                        </div>
-
+                      <div class="schedule__table__item schedule__table__item--btn">
+                        <button class="btn btn--small schedule__table__btn" type="button">
+                          <span class="btn__text">
+                            Забронировать
+                          </span>
+                        </button>
                       </div>
                     </div>
                   </div>
-
 
                 </div>
 
@@ -1697,48 +1858,58 @@
                 Анкета участника
               </h3>
 
+              <div class="color__line connection__line no-xl xs">
+                <span class="color__line__item color__line__item--red"></span>
+                <span class="color__line__item color__line__item--orange"></span>
+                <span class="color__line__item color__line__item--yellow"></span>
+                <span class="color__line__item color__line__item--green"></span>
+                <span class="color__line__item color__line__item--sky"></span>
+                <span class="color__line__item color__line__item--blue"></span>
+                <span class="color__line__item color__line__item--violet"></span>
+              </div>
+
               <form action="/" id="pollForm" name="pollForm" class="poll__form">
                 <div class="poll__line">
                   <div class="poll__item">
+                    <input class="poll__item__input" id="name" name="name" type="text" placeholder="Введите ваше имя"
+                      required>
+
                     <span class="poll__item__label">
                       Имя
                     </span>
-
-                    <input class="poll__item__input" id="name" name="name" type="text" placeholder="Введите ваше имя"
-                      required>
                   </div>
                 </div>
 
                 <div class="poll__line">
                   <div class="poll__item">
+                    <input class="poll__item__input" id="phone" name="phone" type="tel"
+                      placeholder="Введите ваш номер телефона" required>
+
                     <span class="poll__item__label">
                       Телефон
                     </span>
-
-                    <input class="poll__item__input" id="phone" name="phone" type="tel"
-                      placeholder="Введите ваш номер телефона" required>
                   </div>
                 </div>
 
                 <div class="poll__line">
                   <div class="poll__item">
+                    <input class="poll__item__input" id="email" name="email" type="email"
+                      placeholder="Введите ваш e-mail" required>
+
                     <span class="poll__item__label">
                       E-mail
                     </span>
-
-                    <input class="poll__item__input" id="email" name="email" type="email"
-                      placeholder="Введите ваш e-mail" required>
                   </div>
                 </div>
 
                 <div class="poll__line poll__line--code">
                   <div class="poll__item">
+                    <input class="poll__item__input" id="code" name="code" type="text" placeholder="Код из билета"
+                      required>
+
                     <span class="poll__item__label">
                       Код
                     </span>
-
-                    <input class="poll__item__input" id="code" name="code" type="text" placeholder="Код из билета"
-                      required>
                   </div>
 
                   <button class="poll__hint" type="button">
@@ -1779,33 +1950,34 @@
 
                 <div class="poll__line">
                   <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                       <div class="poll__item">
+                        <input class="poll__item__input poll__item__input--calendar" id="date" name="date" type="date"
+                          required>
+
                         <span class="poll__item__label">
                           Дата
                         </span>
-
-                        <input class="poll__item__input poll__item__input--calendar" id="date" name="date" type="date"
-                          required>
                       </div>
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                       <div class="poll__item">
-                        <span class="poll__item__label">
-                          Количество мест
-                        </span>
                         <button class="poll__number__btn poll__number__plus" type="button"
-                          onclick="this.nextElementSibling.stepUp(); this.nextElementSibling.onchange();">
+                          onclick="this.nextElementSibling.stepUp();">
                           <span></span>
                         </button>
                         <input class="poll__item__input poll__item__input--number" id="quantity" name="quantity"
                           type="number" min="1" value="2" required>
 
                         <button class="poll__number__btn poll__number__minus" type="button"
-                          onclick="this.previousElementSibling.stepDown(); this.previousElementSibling.onchange();">
+                          onclick="this.previousElementSibling.stepDown();">
                           <span></span>
                         </button>
+
+                        <span class="poll__item__label">
+                          Количество мест
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -1828,9 +2000,9 @@
                 </div>
 
                 <div class="poll__line">
-                  <button class="btn poll__submit" type="submit">
+                  <button class="btn poll__submit" type="submit" id="pollSubmit">
                     <span class="btn__text">
-                      Забронировать экскурсию
+                      Забронировать <span class="no-xs">экскурсию</span>
                     </span>
                   </button>
                 </div>
@@ -1939,8 +2111,8 @@
 				</div>
 			</div>
 
-			<div class="footer_col">
-				<div class=" footer__item">
+			<div class="footer_col footer_col--reverse">
+				<div class="footer__item">
 					<div class="footer__item__title">
 						Телефон контактного центра:
 					</div>
@@ -1983,9 +2155,9 @@
 	</div>
 </footer>
 
-<!-- <div class="mask"></div>
+<div class="mask"></div>
 
-<div class="modal">
+<div class="modal" id="successfulRegistration">
 	<div class="modal__wrapper">
 		<div class="modal__title">
 			Вы успешно
@@ -2014,9 +2186,12 @@
 			<span></span>
 		</button>
 	</div>
-</div> -->
+</div>
+
 
 <script src="js/include/jquery.min.js"></script>
+<script src="js/include/jquery.maskedinput.min.js"></script>
+<script src="js/include/slick.min.js"></script>
 <script src="js/app.min.js"></script>
 
 </body>
