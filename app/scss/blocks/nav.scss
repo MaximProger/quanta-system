@@ -104,7 +104,15 @@
 
   .nav__list {
     flex-direction: column;
-    gap: 7vh 0;
+    gap: 0;
+  }
+
+  .nav__item {
+    margin-bottom: 7vh;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .nav-toggle {

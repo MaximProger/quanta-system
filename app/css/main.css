@@ -1934,11 +1934,11 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  gap: 14px;
 }
 
 .social__item {
   display: inline-block;
+  margin-right: 14px;
   text-decoration: none;
   -webkit-transition: all 0.5s linear;
   -o-transition: all 0.5s linear;
@@ -1949,6 +1949,10 @@ body {
   -webkit-transform: translateY(-5px);
       -ms-transform: translateY(-5px);
           transform: translateY(-5px);
+}
+
+.social__item:last-child {
+  margin-right: 0;
 }
 
 .social__icon {
@@ -2112,7 +2116,15 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 7vh 0;
+    gap: 0;
+  }
+
+  .nav__item {
+    margin-bottom: 7vh;
+  }
+
+  .nav__item:last-child {
+    margin-bottom: 0;
   }
 
   .nav-toggle {

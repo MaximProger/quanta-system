@@ -2,17 +2,22 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 14px;
 }
 
 .social__item {
   display: inline-block;
+
+  margin-right: 14px;
 
   text-decoration: none;
   transition: all 0.5s linear;
 
   &:hover {
     transform: translateY(-5px);
+  }
+
+  &:last-child {
+    margin-right: 0;
   }
 }
 
