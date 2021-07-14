@@ -182,4 +182,7 @@ $(document).ready(function () {
     const scheduleTable = $(this).parents(".schedule__table");
     scheduleTable.toggleClass("schedule__table--active");
   });
+
+  // Дата
+  if ($("#date")[0].type != "date") $("#test").datepicker();
 });
