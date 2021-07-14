@@ -184,5 +184,7 @@ $(document).ready(function () {
   });
 
   // Дата
-  if ($("#date")[0].type != "date") $("#date").datepicker();
+  if ($('[type="date"]').prop("type") != "date") {
+    $('[type="date"]').datepicker();
+  }
 });
